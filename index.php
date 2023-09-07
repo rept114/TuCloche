@@ -13,7 +13,7 @@
     </div>
     <?php
         // Incluir el contenido de getClientes.php
-        include('modulos/clientes/getClientes.php');
+        include('modulos/Inicio/HomePage.php');
     ?>
     <script src="vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
     <script src="js/index.js?v=1"></script>
