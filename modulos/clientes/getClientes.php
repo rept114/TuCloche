@@ -1,64 +1,58 @@
-<div class="row text-center">
-    <div class="col">
-        <h1>Listado de Clientes</h1>
-        <table class="table table-striped-columns">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">ID</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">RFC</th>
-                    <th scope="col">Telefono</th>
-                    <th scope="col">Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-<?php
-                    include "D:/xampp/htdocs/cactus/vendor/appCode/clsClientes.php";
-                    $clientes = new Clientes();
-                    $result = $clientes->getClientes();
-
-                    $ren = 1;
-                    foreach($result as $row)
-                    {
-?>
-                        <tr>
-                            <th scope="col"><?=$ren?></th>
-                            <td scope="col"><?=$row["id"]?></td>
-                            <td scope="col"><?=$row["nombre"]?></td>
-                            <td scope="col"><?=$row["rfc"]?></td>
-                            <td scope="col"><?=$row["telefono"]?></td>
-                            <td scope="col">
-                                <div class="btn-group" role="group">
-                                    <button class="btn btn-primary btn-sm" onclick="addCliente();">
-                                        <i class="fas fa-pen-to-square"></i>
-                                    </button>
-                                    <button class="btn btn-primary btn-sm" onclick="editCliente();">
-                                        <i class="fas fa-pen"></i>
-                                    </button>
-                                    <button class="btn btn-primary btn-sm" onclick="deleteCliente();">
-                                        <i class="fas fa-trash-alt"></i>
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-
-<?php
-                    }
-?>
-                        <tr>
-                            <td scope="col"></td>
-                            <td scope="col"></td>
-                            <td scope="col"></td>
-                            <td scope="col"></td>
-                            <td scope="col"></td>
-                            <td scope="col">
-                                <button class="btn btn-primary btn-sm" onclick="editCliente(0);"><i class="fa solid fa-plus"></i></button>
-                            </td>
-                        </tr>
-
-            </tbody>
-        </table>
+<div class="jm-loadingpage"></div>
+      <nav class="navbar navbar-dark" style="background-color: #061d4f;">
+            <div class="container-fluid">
+              <a class="navbar-brand mx-auto text-center" href="#">TuCloché</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.php">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ventas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Catalogos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#" onclick="getCliente();">Clientes</a></li>
+                                <li><a class="dropdown-item" href="#">Usuarios</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+                            </ul>
+                        </li>            
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    <div class="container text-center mt-5" id="dvContainer"> 
+    <h4>¡Bienvenido al servicio de cafetería TuCloché!</h4>             
     </div>
-
-</div>
+    <br></br>
+    <div class="container border-top border-5" id="dvContainer">
+    <br></br> 
+    <h4>Explorar por categoría:</h4>
+    <div class="row justify-content-between">
+        <button class="btn btn-secondary col-3">Desayunos</button>
+        <button class="btn btn-secondary col-3">Comidas</button>
+        <button class="btn btn-secondary col-3">Bebidas</button>
+    </div>
+    <br></br>
+    <div class="row justify-content-between">
+        <button class="btn btn-secondary col-3">Menú de la Semana</button>
+        <button class="btn btn-secondary col-3">Snacks</button>
+    </div>     
+    </div> 
+    <br></br> 
+    <div class="container border-top border-5" id="dvContainer">
+    <br></br> 
+    <h4>Menú General:</h4>
+        <button class="btn btn-secondary col-3">Huevos</button>
+    </div>   
