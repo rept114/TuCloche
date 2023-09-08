@@ -40,14 +40,15 @@
     <br></br> 
     <h4>Explorar por categoría:</h4>
     <div class="row justify-content-between">
-        <button class="btn btn-secondary col-3">Desayunos</button>
-        <button class="btn btn-secondary col-3">Comidas</button>
-        <button class="btn btn-secondary col-3">Bebidas</button>
+        <a href="modulos/Categorias/Desayunos.php" class="btn btn-secondary col-3">Desayunos</a>
+        <a href="modulos/Categorias/Comidas.php" class="btn btn-secondary col-3">Comidas</a>
+        <a href="modulos/Categorias/Bebidas.php" class="btn btn-secondary col-3">Bebidas</a>
     </div>
+
     <br></br>
     <div class="row justify-content-between">
-        <button class="btn btn-secondary col-3">Menú de la Semana</button>
-        <button class="btn btn-secondary col-3">Snacks</button>
+        <a href="modulos/Categorias/Menu_Semanal.php" class="btn btn-secondary col-3">Menu de la Semana</a>
+        <a href="modulos/Categorias/Snacks.php" class="btn btn-secondary col-3">Snacks</a>
     </div>     
     </div>
     </div>   
@@ -55,45 +56,122 @@
 
     <div class="container border-top border-5" id="dvContainer">
     <br><br> 
-    <h4>Menú General:</h4>
-    <div class="row">
-        <div class="col-4">
-            <div class="position-relative text-center">
-                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Huevos.jpg');">
+    <h4>Menú General:</h4><br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="position-relative text-center">
+                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Huevos.jpg');">
+                                </div>
+                            </div>
+                            <h5 class="card-title">Huevos</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">(Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$29.00</div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="btn btn-sm mt-2" style="width: 50px; height: 50px;">
-                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                </button>
-                <div class="mt-2 text-left" style="font-size: 20px;">HUEVOS</div> 
-                <div class="mt-2 text-left" style="font-size: 22px;">$29.00</div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="position-relative text-center">
+                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Huevos.jpg');">
+                                </div>
+                            </div>
+                            <h5 class="card-title">Huevos</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">(Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$29.00</div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="position-relative text-center">
+                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Huevos.jpg');">
+                                </div>
+                            </div>
+                            <h5 class="card-title">Huevos</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">(Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$29.00</div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="position-relative text-center">
+                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Huevos.jpg');">
+                                </div>
+                            </div>
+                            <h5 class="card-title">Huevos</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">(Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$29.00</div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="position-relative text-center">
+                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Huevos.jpg');">
+                                </div>
+                            </div>
+                            <h5 class="card-title">Huevos</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">(Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$29.00</div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <div class="position-relative text-center">
+                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Huevos.jpg');">
+                                </div>
+                            </div>
+                            <h5 class="card-title">Huevos</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">(Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$29.00</div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="position-relative text-center">
-                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/OmeletJamon.jpg');">
-                </div>
-                <button class="btn btn-sm mt-2" style="width: 50px; height: 50px;">
-                    <img src="imgs/Agregar.png" alt="Small Button Image 2" style="max-width: 100%; max-height: 100%;">
-                </button>
-                <div class="mt-2 text-left" style="font-size: 20px;">OMELET</div>
-                <div class="mt-2 text-left" style="font-size: 22px;">$29.00</div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="position-relative text-center">
-                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Machacahuevo.jpg');">
-                </div>
-                <div class="mt-2 text-left" style="font-size: 20px;">MACHACAHUEVO</div>
-                <div class="mt-2 text-left" style="font-size: 22px;">$29.00</div>
-                <button class="btn btn-sm mt-2" style="width: 50px; height: 50px;">
-                    <img src="imgs/Agregar.png" alt="Small Button Image 3" style="max-width: 100%; max-height: 100%;">
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
     <style>
         .square-btn {
             width: 200px; /* Adjust the width to make it square */
@@ -106,4 +184,5 @@
         }
     </style>
     </div>   
+    
 

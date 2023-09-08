@@ -40,15 +40,16 @@ function Suma2(){
     }
 }
 */
-function getClientes(){
-    $.post("modulos/clientes/getClientes.php", {})
-    .done(function(data)
-    {
-        $("#dvContainer").html("");
-        $("#dvContainer").html(data);
-    });
+function loadModule(moduleName) {
+    var xhttp = new XMLHttpRequest(); // Mueve esta línea al principio de la función
+
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById('dvContainer').innerHTML = this.responseText;
+        }
+    };
+    
+    xhttp.open("GET", "modulos/Categorias/" + moduleName + ".php", true);
+    xhttp.send();
 }
 
-$(document).ready(function(){
-    getClientes();
-});

@@ -15,8 +15,8 @@
         // Incluir el contenido de getClientes.php
         include('modulos/Inicio/HomePage.php');
     ?>
-    <script src="vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-    <script src="js/index.js?v=1"></script>
+    <script src="js/index.js"></script>
+    <script src="vendor/jquery/jquery-3.7.0.js"></script>
     <!--Boostrap 5.0 js!-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
     <script src="https://kit.fontawesome.com/1c4528e88d.js" crossorigin="anonymous"></script>
