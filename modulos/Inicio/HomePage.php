@@ -49,10 +49,61 @@
         <button class="btn btn-secondary col-3">Menú de la Semana</button>
         <button class="btn btn-secondary col-3">Snacks</button>
     </div>     
-    </div> 
-    <br></br> 
-    <div class="container border-top border-5" id="dvContainer">
-    <br></br> 
-    <h4>Menú General:</h4>
-        <button class="btn btn-secondary col-3">Huevos</button>
+    </div>
     </div>   
+    <br></br> 
+
+    <div class="container border-top border-5" id="dvContainer">
+    <br><br> 
+    <h4>Menú General:</h4>
+    <div class="row">
+        <div class="col-4">
+            <div class="position-relative text-center">
+                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Huevos.jpg');">
+                </div>
+                <button class="btn btn-sm mt-2" style="width: 50px; height: 50px;">
+                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                </button>
+                <div class="mt-2 text-left" style="font-size: 20px;">HUEVOS</div> 
+                <div class="mt-2 text-left" style="font-size: 22px;">$29.00</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="position-relative text-center">
+                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/OmeletJamon.jpg');">
+                </div>
+                <button class="btn btn-sm mt-2" style="width: 50px; height: 50px;">
+                    <img src="imgs/Agregar.png" alt="Small Button Image 2" style="max-width: 100%; max-height: 100%;">
+                </button>
+                <div class="mt-2 text-left" style="font-size: 20px;">OMELET</div>
+                <div class="mt-2 text-left" style="font-size: 22px;">$29.00</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="position-relative text-center">
+                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Machacahuevo.jpg');">
+                </div>
+                <div class="mt-2 text-left" style="font-size: 20px;">MACHACAHUEVO</div>
+                <div class="mt-2 text-left" style="font-size: 22px;">$29.00</div>
+                <button class="btn btn-sm mt-2" style="width: 50px; height: 50px;">
+                    <img src="imgs/Agregar.png" alt="Small Button Image 3" style="max-width: 100%; max-height: 100%;">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <style>
+        .square-btn {
+            width: 200px; /* Adjust the width to make it square */
+            height: 200px; /* Adjust the height to make it square */
+            background-size: cover;
+            text-align: center;
+            padding: 0;
+            line-height: 100px; /* Vertically center the text */
+            border: none; /* Remove the default button border */
+        }
+    </style>
+    </div>   
+
