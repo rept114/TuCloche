@@ -21,7 +21,8 @@
             </form>
         </div>
     </nav>
-    <?php/*Aqui van las pantallas dvContainer*/?> 
+    <?php
+    /*Aqui van las pantallas dvContainer*/?> 
     <div class="container mt-5" id="dvContainer">
         <div class="container text-center mt-5" id="iContainer"> 
             <h4>¡Bienvenido al servicio de cafetería TuCloché!</h4>             
