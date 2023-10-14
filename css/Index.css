@@ -27,9 +27,11 @@
     align-items: center;
 }
   
-  h4 {
+h4 {
     margin: 0;
     flex-grow: 1; /* Esto hará que el texto tome todo el espacio restante */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 36px !important;
 }
   
 /*Define el tamaño del icono del back*/
@@ -51,13 +53,18 @@
     object-fit: cover; /* Preserve aspect ratio and cover the container */
 }
 
-/*Control del txto TuCloche*/  
+/*Control del texto TuCloche*/  
 .navbar-brand {
     display: block;
     margin: auto;
     text-align: center;
-    font-size: 48px !important; /* Cambia este valor según sea necesario */
-    font-weight: bold !important;
+    font-size: 64px !important; /* Cambia este valor según sea necesario */
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px !important;
   }
   
   
