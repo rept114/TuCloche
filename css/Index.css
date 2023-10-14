@@ -33,7 +33,7 @@
 
 /*¿Qué define?*/
 .custom-image {
-    height: 50px; /* Set the height you desire, e.g., 200px */
-    width: 20%; /* Maintain the original aspect ratio */
+    height: 200px; /* Set the height you desire, e.g., 200px */
+    width: 100%; /* Maintain the original aspect ratio */
     object-fit: cover; /* Preserve aspect ratio and cover the container */
 }
