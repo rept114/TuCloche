@@ -1,10 +1,13 @@
-<div class="container text-center mt-5" id="iContainer"> 
-    <button class="btn back-btn">
-        <img src="imgs/back.png" alt="Back" style="max-width: 100%; max-height: 100%;" href="index.php">
-    </button>
-    <h4>¡Bienvenido al servicio de cafetería TuCloché!</h4>             
+<div class="container text-center mt-5" id="iContainer">
+    <div id="pageback">
+        <a href="index.php" class="btn back-btn">
+            <img src="imgs/back.png" alt="Back" style="max-width: 100%; max-height: 100%;">
+            <h5>Atrás</h5>
+        </a>
+        <h4 id="bienvenido">¡Bienvenido al servicio de cafetería TuCloché!</h4> 
+    </div>  
 </div>
-<br></br>
+<br>
 <div class="container border-top border-5" id="cContainer"></div><br><br>
 <h1>Cards / Busquedas</h1>
 <div class="container">
