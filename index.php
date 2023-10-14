@@ -18,6 +18,7 @@
                 <img src="imgs/Carrito.png" alt="Carrito" style="max-width: 100%; max-height: 100%;">
         </button>
         </form>
+        </div>
     </nav>
     <?php/*Aqui van las pantallas dvContainer*/?> 
     <div class="container mt-5" id="dvContainer">
