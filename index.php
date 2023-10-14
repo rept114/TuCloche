@@ -17,6 +17,8 @@
             <form class="d-flex">
             <button class="btn carrito-btn">
                 <img src="imgs/Carrito.png" alt="Carrito" style="max-width: 100%; max-height: 100%;">
+            </button>
+            </form>
         </div>
     </nav>
     <?php
