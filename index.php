@@ -14,14 +14,9 @@
         <div class="container-fluid">
         <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
         <form class="d-flex">
-<<<<<<< HEAD
         <button class="btn carrito-btn">
-                <img src="imgs/Carrito.png" alt="Pagar" style="max-width: 100%; max-height: 100%;">
-=======
-            <button class="btn carrito-btn">
                 <img src="imgs/Carrito.png" alt="Carrito" style="max-width: 100%; max-height: 100%;">
->>>>>>> de10a223a922e23c1c03a6149c1c79a6b222f5c5
-            </button>
+        </button>
         </form>
     </nav>
     <?php/*Aqui van las pantallas dvContainer*/?> 
@@ -53,7 +48,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">
-                <img src="imgs/Huevos.jpg" class="card-img-top custom-image" alt="Huevos">
+                <img src="imgs/Huevos.jpg" class="card-img-top" alt="Huevos" style="max-width: 100%; max-height: 100%;">
                 <div class="card-body">
                     <h5 class="card-title">Huevos</h5>
                     <p class="card-text">(Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</p>
@@ -68,7 +63,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                <img src="imgs/OmeletJamon.jpg" class="card-img-top custom-image" alt="Omelet y Ham">
+                <img src="imgs/OmeletJamon.jpg" class="card-img-top" alt="Omelet y Ham" style="max-width: 100%; max-height: 100%;">
                 <div class="card-body">
                     <h5 class="card-title">Omelet Jamón y Queso</h5>
                     <div class="d-flex justify-content-between align-items-center">
@@ -82,7 +77,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                <img src="imgs/Machacahuevo.jpg" class="card-img-top custom-image" alt="Machaca con huevo">
+                <img src="imgs/Machacahuevo.jpg" class="card-img-top" alt="Machaca con huevo" style="max-width: 100%; max-height: 100%;">
                 <div class="card-body">
                     <h5 class="card-title">Machaca con huevo</h5>
                     <div class="d-flex justify-content-between align-items-center">
