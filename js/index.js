@@ -1,6 +1,11 @@
 $( document ).ready( function() {
     /*Oculta el gif loading*/
     $(".jm-loadingpage").fadeOut("slow");
+
+    $(".carrito-btn").click(function(event) {
+        event.preventDefault(); // Esto evitará que el enlace siga el href="#"
+        Carrito(); // Llama a la función Carrito
+    });
 } )
 
 function Desayunos(){
@@ -41,6 +46,15 @@ function Bebidas(){
 
 function Snacks(){
     $.post("modulos/Categorias/Snacks.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    });
+}
+
+function Carrito(){
+    $.post("modulos/Carrito/Productos.php", {})
     .done(function(data)
     {
         $("#dvContainer").html("");
