@@ -1,4 +1,7 @@
 <div class="container text-center mt-5" id="iContainer"> 
+    <button class="btn back-btn">
+        <img src="imgs/back.png" alt="Back" style="max-width: 100%; max-height: 100%;" href="index.php">
+    </button>
     <h4>¡Bienvenido al servicio de cafetería TuCloché!</h4>             
 </div>
 <br></br>
