@@ -1,55 +1,49 @@
-/*function holamundo()
-{
-    alert("Hola mundo")
-}
+$( document ).ready( function() {
+    /*Oculta el gif loading*/
+    $(".jm-loadingpage").fadeOut("slow");
+} )
 
-function Suma(){
-    //"getElementById" Se utiliza para acceder a un control del DOM
-    n1=document.getElementById("txtn1").value;
-    n2=document.getElementById("txtn2").value;
-    Resultado = parseInt(n1) + parseInt(n2);
-    document.getElementById("txtnRes").value = Resultado;
-    alert("Tu suma es igual a: " + Resultado);
-}
-
-function Resta(){
-    //"getElementById" Se utiliza para acceder a un control del DOM
-    n1=document.getElementById("txtn1").value;
-    n2=document.getElementById("txtn2").value;
-    Resultado = parseInt(n1) - parseInt(n2);
-    document.getElementById("txtnRes").value = Resultado;
-    alert("Tu suma es igual a: " + Resultado);
-}
-
-function Suma2(){
-    n1 = $("#txtn1").val();
-    n2 = $("#txtn2").val();
-
-    if(n1=="0" || n2=="0")
+function Desayunos(){
+    $.post("modulos/Categorias/Desayunos.php", {})
+    .done(function(data)
     {
-        Swal.fire(
-            "Error",
-            "Debe capturar numeros mayores a 0",
-            "error"
-        );
-    }
-    else 
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    });
+}
+
+function Menu_Semanal(){
+    $.post("modulos/Categorias/Menu_Semanal.php", {})
+    .done(function(data)
     {
-        Resultado = parseInt(n1) + parseInt(n2)
-        $("#txtnRes").val(Resultado);
-    }
-}
-*/
-function loadModule(moduleName) {
-    var xhttp = new XMLHttpRequest(); // Mueve esta línea al principio de la función
-
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById('dvContainer').innerHTML = this.responseText;
-        }
-    };
-    
-    xhttp.open("GET", "modulos/Categorias/" + moduleName + ".php", true);
-    xhttp.send();
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    });
 }
 
+function Comidas(){
+    $.post("modulos/Categorias/Comidas.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    });
+}
+
+function Bebidas(){
+    $.post("modulos/Categorias/Bebidas.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    });
+}
+
+function Snacks(){
+    $.post("modulos/Categorias/Snacks.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    });
+}

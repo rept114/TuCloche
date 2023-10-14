@@ -1,0 +1,22 @@
+
+/*Cards*/
+.square-btn {
+    width: 200px; /* Adjust the width to make it square */
+    height: 200px; /* Adjust the height to make it square */
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    line-height: 100px; /* Vertically center the text */
+    border: none; /* Remove the default button border */
+}
+
+/*Define el tamaño del carrito de compras*/
+.carrito-btn {
+    width: 80px; /* Adjust the width to make it square */
+    height: 80px; /* Adjust the height to make it square */
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    line-height: 100px; /* Vertically center the text */
+    border: none; /* Remove the default button border */
+}
