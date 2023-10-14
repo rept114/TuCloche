@@ -58,13 +58,29 @@ h4 {
     display: block;
     margin: auto;
     text-align: center;
-    font-size: 64px !important; /* Cambia este valor según sea necesario */
+    font-size: 48px !important; /* Cambia este valor según sea necesario */
     font-family: 'Ubuntu', sans-serif;
   }
 
   h5 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px !important;
   }
   
-  
+  /*Acomoda el logo y el texto*/
+  #ulsa {
+    width: 80px; /* Adjust the width to make it square */
+    height: 80px; /* Adjust the height to make it square */
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    line-height: 100px; /* Vertically center the text */
+    border: none; /* Remove the default button border */
+  }
+
+  #logoulsa {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+    text-align: center !important;
+}

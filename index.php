@@ -13,7 +13,10 @@
     <div class="jm-loadingpage"></div>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #061d4f;">
         <div class="container-fluid">
-            <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
+            <div id="logoulsa">
+                <img src="imgs/LOGO_ULSA.png" id="ulsa">
+                <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
+            </div>
             <form class="d-flex">
             <button class="btn carrito-btn">
                 <img src="imgs/Carrito.png" alt="Carrito" style="max-width: 100%; max-height: 100%;">
