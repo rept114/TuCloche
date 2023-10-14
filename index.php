@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="css/Index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="vendor/sweetalert2/dist/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="jm-loadingpage"></div>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #061d4f;">
         <div class="container-fluid">
-        <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
-        <form class="d-flex">
-        <button class="btn carrito-btn">
+            <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
+            <form class="d-flex">
+            <button class="btn carrito-btn">
                 <img src="imgs/Carrito.png" alt="Carrito" style="max-width: 100%; max-height: 100%;">
-        </button>
-        </form>
+            </button>
+            </form>
         </div>
     </nav>
     <?php/*Aqui van las pantallas dvContainer*/?> 
@@ -92,7 +93,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                <img src="imgs/Machacamexicana.png" class="card-img-top" alt="Machaca a la mexicana">
+                <img src="imgs/Machacamexicana.png" class="card-img-top custom-image" alt="Machaca a la mexicana">
                 <div class="card-body">
                     <h5 class="card-title">Machaca a la mexicana</h5>
                     <div class="d-flex justify-content-between align-items-center">
@@ -106,7 +107,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                <img src="pan-mantequilla.jpeg" class="card-img-top" alt="Pan con mantequilla">
+                <img src="imgs/pan-mantequilla.jpeg" class="card-img-top custom-image" alt="Pan con Mantequilla">
                 <div class="card-body">
                     <h5 class="card-title">Pan con Mantequilla</h5>
                     <div class="d-flex justify-content-between align-items-center">
@@ -118,561 +119,363 @@
                 </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="imgs/Hotcakes.jpg" class="card-img-top custom-image" alt="Hot Cakes">
+                <div class="card-body">
+                    <h5 class="card-title">Hot Cakes</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="font-size: 22px;">$29.00</div>
+                        <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Ensalada.jpg" class="card-img-top custom-image" alt="Ensalada">
+                    <div class="card-body">
+                        <h5 class="card-title">Ensalada</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$55.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Papas-francesa.jpg" class="card-img-top custom-image" alt="Papas a la Francesa">
+                    <div class="card-body">
+                        <h5 class="card-title">Papas a la Francesa</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$23.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/PapasGajo.jpg" class="card-img-top custom-image" alt="Papas gajo sazonadas">
+                    <div class="card-body">
+                        <h5 class="card-title">Papas gajo sazonadas</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$25.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Vaso-yogurt.jpg" class="card-img-top custom-image" alt="Vaso yogurt y frutas">
+                    <div class="card-body">
+                        <h5 class="card-title">Vaso yogurt y frutas</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$26.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/pico-gallo.jpg" class="card-img-top custom-image" alt="Vaso con pico de gallo">
+                    <div class="card-body">
+                        <h5 class="card-title">Vaso con pico de gallo</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$20.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/mollete-sencillo.jpg" class="card-img-top custom-image" alt="Mollete Sencillo">
+                    <div class="card-body">
+                        <h5 class="card-title">Mollete Sencillo</h5>
+                        <p class="card-text">(2 mitades)</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$31.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Mollete-carne.jpg" class="card-img-top custom-image" alt="Mollete con Carne">
+                    <div class="card-body">
+                        <h5 class="card-title">Mollete con Carne</h5>
+                        <p class="card-text">(2 mitades)</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$43.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/torta-jamon.jpg" class="card-img-top custom-image" alt="Torta de Jamón">
+                    <div class="card-body">
+                        <h5 class="card-title">Torta de Jamón</h5>
+                        <p class="card-text">(2 pzas)</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$20.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
-
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Hotcakes.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Hot Cakes</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$29.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Ensalada.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Ensalada</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$55.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Papas-francesa.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Papas a la francesa</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$23.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/PapasGajo.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Papas gajo sazonadas</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$25.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <br>
-
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Vaso-yogurt.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Vaso yogurt y frutas</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$26.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/pico-gallo.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Vaso con pico de gallo</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$20.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/mollete-sencillo.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Mollete Sencillo</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">(2 mitades)</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$31.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Mollete-carne.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Mollete con Carne</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">(2 mitades)</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$43.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/torta-jamon.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Torta de Jamón</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">(2 pzas)</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$20.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/torta-cochinita.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Torta de cochinita</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$34.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Torta-Cubana.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Torta Cubana</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">(2 mitades)</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$40.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/hamburguesa.png');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Hamburguesa sencilla</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">(Queso y papas)</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$37.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Hamburguesa-jamon.png');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Hamburguesa con jamón</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$39.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/BaguettePollo.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Baguette de Pollo</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$50.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/BaguetteJamon.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Baguette de Jamon/manchego</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$42.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/BaguetteCarne.png');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Baguette de Carne Asada</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$60.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Fajitas-pollo.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Fajitas de Pollo</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$50.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Fajitas-res.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Fajitas de Res</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$65.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/quesadillas.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Orden Quesadillas</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">(2 pzas)</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$37.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/quesadillas.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Orden Quesadillas</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">(3 pzas)</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$48.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Quesadilla-carne.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Quesadillas con carne</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">(2 pzas)</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$48.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>        <br><br>
-                </div>
-            
-        <div class="container border-top border-5" id="mnuContainer">
-        <br><br> 
-        <h4>Sandwiches:</h4><br>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Sandwich-clasico.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Sandwich Clásico</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$23.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Sandwich-light.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Sandwich light</h5>
-                            <h6 class="card-subtitle mb-2 text-muted"></h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$28.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Sandwich-extremo.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Sandwich Extremo</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$30.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Sandwich-pollo.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Sandwich de Pollo</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">(A la plancha)</h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$35.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div><br>
-                </div>
-            </div>
-        </div> 
-
-        <div class="container border-top border-3" id="mnubContainer">
-        <br><br> 
-        <h4>Bebidas:</h4><br>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Chocomilk.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Chocomilk</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$22.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/chocomilk-platano.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Chocomilk de plátano</h5>
-                            <h6 class="card-subtitle mb-2 text-muted"></h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$25.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Licuado-platano.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Licuado de plátano</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$23.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/torta-cochinita.jpg" class="card-img-top custom-image" alt="Torta de Cochinita">
+                    <div class="card-body">
+                        <h5 class="card-title">Torta de Cochinita</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$34.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/Licuado-fresa.jpg');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Licuado de fresa</h5>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$29.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <div class="position-relative text-center">
-                                <div class="btn btn-secondary square-btn" style="background-image: url('imgs/licuado-fresa-platano.png');">
-                                </div>
-                            </div>
-                            <h5 class="card-title">Licuado de fresa y plátano</h5>
-                            <h6 class="card-subtitle mb-2 text-muted"></h6>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div style="font-size: 22px;">$26.00</div>
-                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                                </button>
-                            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Torta-Cubana.jpg" class="card-img-top custom-image" alt="Torta Cubana">
+                    <div class="card-body">
+                        <h5 class="card-title">Torta Cubana</h5>
+                        <p class="card-text">(2 mitades)</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$40.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/hamburguesa.png" class="card-img-top custom-image" alt="Hamburguesa Sencilla">
+                    <div class="card-body">
+                        <h5 class="card-title">Hamburguesa Sencilla</h5>
+                        <p class="card-text">(Queso y papas)</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$37.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Hamburguesa-jamon.png" class="card-img-top custom-image" alt="Hamburguesa con Jamón">
+                    <div class="card-body">
+                        <h5 class="card-title">Hamburguesa con Jamón</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$39.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/BaguettePollo.jpg" class="card-img-top custom-image" alt="Baguette de Pollo">
+                    <div class="card-body">
+                        <h5 class="card-title">Baguette de Pollo</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$50.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/BaguetteJamon.jpg" class="card-img-top custom-image" alt="Baguette de Jamón/Manchego">
+                    <div class="card-body">
+                        <h5 class="card-title">Baguette de Jamón/Manchego</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$42.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/BaguetteCarne.png" class="card-img-top custom-image" alt="Baguette de Carne Asada">
+                    <div class="card-body">
+                        <h5 class="card-title">Baguette de Carne Asada</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$60.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Fajitas-pollo.jpg" class="card-img-top custom-image" alt="Fajitas de Pollo">
+                    <div class="card-body">
+                        <h5 class="card-title">Fajitas de Pollo</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$50.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Fajitas-res.jpg" class="card-img-top custom-image" alt="Fajitas de Res">
+                    <div class="card-body">
+                        <h5 class="card-title">Fajitas de Res</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$65.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/quesadillas.jpg" class="card-img-top custom-image" alt="Orden Quesadillas">
+                    <div class="card-body">
+                        <h5 class= "card-title">Orden Quesadillas</h5>
+                        <p class="card-text">(2 pzas)</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$37.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Quesadilla-carne.jpg" class="card-img-top custom-image" alt="Quesadillas con Carne">
+                    <div class="card-body">
+                        <h5 class="card-title">Quesadillas con Carne</h5>
+                        <p class="card-text">(2 pzas)</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$48.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Quesadilla-carne.jpg" class="card-img-top custom-image" alt="Quesadillas con Carne">
+                    <div class="card-body">
+                        <h5 class="card-title">Quesadillas con Carne</h5>
+                        <p class="card-text">(2 pzas)</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$48.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Sandwich-light.jpg" class="card-img-top custom-image" alt="Sandwich Light">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich Light</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$28.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Sandwich-extremo.jpg" class="card-img-top custom-image" alt="Sandwich Extremo">
+                    <div class= "card-body">
+                        <h5 class="card-title">Sandwich Extremo</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$30.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Sandwich-pollo.jpg" class="card-img-top custom-image" alt="Sandwich de Pollo">
+                    <div class="card-body">
+                        <h5 class="card-title">Sandwich de Pollo</h5>
+                        <p class="card-text">(A la plancha)</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$35.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
     <script src="vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
     <script src="js/index.js?v=1"></script>
     <!--Boostrap 5.0 js!-->
