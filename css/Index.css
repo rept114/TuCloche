@@ -32,7 +32,6 @@
     flex-grow: 1; /* Esto hará que el texto tome todo el espacio restante */
 }
   
-
 /*Define el tamaño del icono del back*/
 .back-btn {
     width: 80px; /* Adjust the width to make it square */
@@ -42,7 +41,7 @@
     padding: 0;
     line-height: 100px; /* Vertically center the text */
     border: none; /* Remove the default button border */
-    margin-right: -10%; /* Ajusta el margen según sea necesario */
+    margin-right: -7.5%; /* Ajusta el margen según sea necesario */
 }
 
 /*¿Qué define?*/
@@ -51,3 +50,14 @@
     width: 100%; /* Maintain the original aspect ratio */
     object-fit: cover; /* Preserve aspect ratio and cover the container */
 }
+
+/*Control del txto TuCloche*/  
+.navbar-brand {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 48px !important; /* Cambia este valor según sea necesario */
+    font-weight: bold !important;
+  }
+  
+  
