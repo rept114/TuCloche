@@ -14,8 +14,8 @@
         <div class="container-fluid">
         <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
         <form class="d-flex">
-            <button class="btn carrito-btn">
-                <img src="imgs/Carrito.png" alt="Pagar" >
+        <button class="btn carrito-btn">
+                <img src="imgs/Carrito.png" alt="Pagar" style="max-width: 100%; max-height: 100%;">
             </button>
         </form>
     </nav>
