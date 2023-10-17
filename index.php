@@ -41,7 +41,7 @@
             </div>
             <br></br>
             <div class="row justify-content-between">
-                <a href="#" class="btn btn-secondary col-3" onclick="Menu_Semana();">Menu de la Semana</a>
+                <a href="#" class="btn btn-secondary col-3" onclick="Menu_Semanal();">Menu de la Semana</a>
                 <a href="#" class="btn btn-secondary col-3" onclick="Snacks();">Snacks</a>
             </div>     
         </div>   
