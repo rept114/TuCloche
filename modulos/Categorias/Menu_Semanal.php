@@ -9,3 +9,18 @@
 </div>
 <br>
 <div class="container border-top border-5" id="cContainer"></div><br><br>
+
+            <div class="col">
+                <div class="card h-100">
+                <img src="imgs/Hotcakes.jpg" class="card-img-top custom-image" alt="Hot Cakes">
+                <div class="card-body">
+                    <h5 class="card-title">Hot Cakes</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="font-size: 22px;">$29.00</div>
+                        <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
