@@ -9,6 +9,7 @@
 </div>
 <br>
 <div class="container border-top border-5" id="cContainer"></div><br><br>
+    <h4>Comidas:</h4>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
                 <div class="card h-100">

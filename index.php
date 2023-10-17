@@ -57,7 +57,7 @@
                 <img src="imgs/Huevos.jpg" class="card-img-top custom-image" alt="Huevos" style="max-width: 100%; max-height: 100%;">
                 <div class="card-body">
                     <h5 class="card-title">Huevos</h5>
-                    <p class="card-text">(Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</p>
+                    <p class="card-text">( Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div style="font-size: 22px;">$29.00</div>
                         <button class="btn btn-sm" style="width: 50px; height: 50px;">
