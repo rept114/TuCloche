@@ -18,7 +18,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <div style="font-size: 22px;">$29.00</div>
                         <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            <img src="imgs/menos.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
                         </button>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <div style="font-size: 22px;">$22.00</div>
                         <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            <img src="imgs/menos.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
                         </button>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
             </div>
             <div class="card text-bg-dark">
                 <a href="#" class="btn">
-                    <img src="imgs/Agregar.png" class="card-img img-fluid" alt="Agregar" style="max-width: 300px; max-height: 300px;">
+                    <img src="imgs/PLUS_CARRITO.png" class="card-img img-fluid" alt="Agregar" style="max-width: 300px; max-height: 300px;">
                 </a>
             </div>
 
