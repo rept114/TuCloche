@@ -52,10 +52,107 @@
         <br><br> 
         <h4>Menú General:</h4><br>
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="imgs/Huevos.jpg" class="card-img-top custom-image" alt="Huevos" style="max-width: 100%; max-height: 100%;">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                <img src="imgs/Huevos.jpg" class="card-img-top custom-image" alt="Huevos" style="max-width: 100%; max-height: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Huevos</h5>
+                    <p class="card-text">( Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="font-size: 22px;">$29.00</div>
+                        <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="imgs/OmeletJamon.jpg" class="card-img-top custom-image" alt="Omelet y Ham" style="max-width: 100%; max-height: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Omelet Jamón y Queso</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="font-size: 22px;">$35.00</div>
+                        <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="imgs/Machacahuevo.jpg" class="card-img-top custom-image" alt="Machaca con huevo" style="max-width: 100%; max-height: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title">Machaca con huevo</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="font-size: 22px;">$45.00</div>
+                        <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="imgs/Machacamexicana.png" class="card-img-top custom-image" alt="Machaca a la mexicana">
+                <div class="card-body">
+                    <h5 class="card-title">Machaca a la mexicana</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="font-size: 22px;">$45.00</div>
+                        <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="imgs/pan-mantequilla.jpeg" class="card-img-top custom-image" alt="Pan con Mantequilla">
+                <div class="card-body">
+                    <h5 class="card-title">Pan con Mantequilla</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="font-size: 22px;">$13.00</div>
+                        <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="imgs/Hotcakes.jpg" class="card-img-top custom-image" alt="Hot Cakes">
+                <div class="card-body">
+                    <h5 class="card-title">Hot Cakes</h5>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div style="font-size: 22px;">$29.00</div>
+                        <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="imgs/Ensalada.jpg" class="card-img-top custom-image" alt="Ensalada">
+                    <div class="card-body">
+                        <h5 class="card-title">Ensalada</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div style="font-size: 22px;">$55.00</div>
+                            <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
                     <div class="card-body">
                         <h5 class="card-title">Huevos</h5>
                         <p class="card-text">(Rancheros - salchicha - jamón - tocino - sopitas de huevo - nopales - verdura)</p>
