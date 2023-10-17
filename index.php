@@ -14,12 +14,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #061d4f;">
         <div class="container-fluid">
             <div id="logoulsa">
-                <img src="imgs/LOGO_ULSA.png" id="ulsa">
+                <a href="index.php"><img src="imgs/LOGO_ULSA.png" id="ulsa"></a>
                 <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
             </div>
             <form class="d-flex">
             <button class="btn carrito-btn">
-                <img src="imgs/Carrito.png" alt="Carrito" style="max-width: 100%; max-height: 100%;">
+                <a href="#" onclick="Carrito();"><img src="imgs/Carrito.png" alt="Carrito" style="max-width: 100%; max-height: 100%;"></a>
             </button>
             </form>
         </div>
