@@ -17,5 +17,10 @@ class Productos
         return $this->objMysql->ejecutaSPSafe('sp_get_producto_DB',null,$MQ);   
     }
 
+    public function getDesayunosProductos($MQ=false){
+        //select all data       
+        return $this->objMysql->ejecutaSPSafe('sp_getDesayunos_producto_DB',null,$MQ);   
+    }
+
 }
 ?>
