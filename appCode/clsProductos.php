@@ -22,5 +22,20 @@ class Productos
         return $this->objMysql->ejecutaSPSafe('sp_getDesayunos_producto_DB',null,$MQ);   
     }
 
+    public function getComidasProductos($MQ=false){
+        //select all data       
+        return $this->objMysql->ejecutaSPSafe('sp_getComidas_producto_DB',null,$MQ);   
+    }
+
+    public function getSnacksProductos($MQ=false){
+        //select all data       
+        return $this->objMysql->ejecutaSPSafe('sp_getSnacks_producto_DB',null,$MQ);   
+    }
+
+    public function getBebidasProductos($MQ=false){
+        //select all data       
+        return $this->objMysql->ejecutaSPSafe('sp_getBebidas_producto_DB',null,$MQ);   
+    }
+
 }
 ?>
