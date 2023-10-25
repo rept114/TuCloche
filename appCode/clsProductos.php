@@ -11,7 +11,7 @@ class Productos
         $this->objMysql = new clsMysql();
     }
  
-    // regresa todos los clientes activos (status = 1)
+    // regresa todos los productos activos (status = 1)
     public function getProductos($MQ=false){
         //select all data       
         return $this->objMysql->ejecutaSPSafe('sp_get_producto_DB',null,$MQ);   
@@ -35,6 +35,11 @@ class Productos
     public function getBebidasProductos($MQ=false){
         //select all data       
         return $this->objMysql->ejecutaSPSafe('sp_getBebidas_producto_DB',null,$MQ);   
+    }
+    
+    public function getMenuSemanal($MQ=false){
+        //select all data       
+        return $this->objMysql->ejecutaSPSafe('sp_getMenuSemanal_producto_DB',null,$MQ);   
     }
 
 }
