@@ -32,19 +32,35 @@
         </div>
         <br></br>
         <div class="container border-top border-5" id="cContainer">
-            <br></br> 
-            <h4>Explorar por categoría:</h4>
-            <div class="row justify-content-between">
-                <a href="#" class="btn btn-secondary col-3" onclick="Desayunos();">Desayunos</a>
-                <a href="#" class="btn btn-secondary col-3" onclick="Comidas();">Comidas</a>
-                <a href="#" class="btn btn-secondary col-3" onclick="Bebidas();">Bebidas</a>
+            <br></br>
+            <h2>Explorar por categoría:</h2>
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Desayunos();">
+                    <h1>Desayunos</h1>
+                    <img src="imgs/DESAYUNO.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
+                </button>
+                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Comidas();">
+                    <h1>Comidas</h1>
+                    <img src="imgs/COMIDA.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
+                </button>
+                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Bebidas();">
+                    <h1>Bebidas</h1>
+                    <img src="imgs/Soda_2.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
+                </button>
             </div>
             <br></br>
-            <div class="row justify-content-between">
-                <a href="#" class="btn btn-secondary col-3" onclick="Menu_Semanal();">Menu de la Semana</a>
-                <a href="#" class="btn btn-secondary col-3" onclick="Snacks();">Snacks</a>
-            </div>     
-        </div>   
+            <div class="d-flex justify-content-between">
+                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Menu_Semanal();">
+                    <h3>Menú de la Semana</h3>
+                    <img src="imgs/MENU.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
+                </button>
+                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Snacks();">
+                    <h3>Snacks</h3>
+                    <img src="imgs/Snacks.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
+                </button>
+            </div>
+        </div>
+
         <br></br>
         <div class="container border-top border-3" id="mnuGContainer">
         <br><br> 
