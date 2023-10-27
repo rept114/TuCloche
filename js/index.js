@@ -1,12 +1,14 @@
-$( document ).ready( function() {
-    /*Oculta el gif loading*/
+$(document).ready(function() {
     $(".jm-loadingpage").fadeOut("slow");
 
-    $(".carrito-btn").click(function(event) {
-        event.preventDefault(); // Esto evitará que el enlace siga el href="#"
-        Carrito(); // Llama a la función Carrito
-    });
-} )
+    if ($(".carrito-btn").length) {
+        $(".carrito-btn").click(function(event) {
+            event.preventDefault();
+            Carrito();
+        });
+    }
+});
+
 
 function Desayunos(){
     $.post("modulos/Categorias/Desayunos.php", {})

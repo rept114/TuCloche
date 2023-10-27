@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="css/Productos.css">
 <div class="container text-center mt-5" id="iContainer">
     <div id="pageback">
         <a href="index.php" class="btn back-btn">
@@ -44,27 +45,6 @@
                 </a>
             </div>
 
-
-            <style>
-    .curved-table {
-        border-radius: 30px; /* Adjust the radius as needed */
-        overflow: hidden;
-    }
-    .curved-table th, .curved-table td {
-        padding: 10px;
-    }
-
-    .btn-dark-blue {
-    background-color: #0b1a5c; /* Dark Blue color code */
-    color: #fff; /* Text color */  
-  }
-
-    .btn {
-    font-size: 21px; /* Adjust the font size as needed */
-  }
-
-</style>
-
 <table class="table curved-table table-hover table-light table-borderless">
     <thead class="text-center">
         <tr>
@@ -108,12 +88,12 @@
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
         </div>
         <div class="mb-3">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Número tarjeta">
+            <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="Número tarjeta">
         </div>
         <div class="row">
             <div class="col">
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mm/yy">
+                    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="mm/yy">
                 </div>
             </div>
             <div class="col">
@@ -124,7 +104,7 @@
         </div>
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recuerda mi tarjeta</label>
+            <label class="form-check-label" for="exampleCheck1">Recordar mi tarjeta</label>
         </div>
         </form>
       </div>

@@ -11,7 +11,7 @@
 <div class="container border-top border-5" id="cContainer"></div><br><br>
 
 <div class="container">
-    <h4>Desayunos:</h4>
+    <h4>Snacks:</h4>
     <div class="row row-cols-12 row-cols-md-3 g-4">
         <?php
         include '../../appCode/clsProductos.php';   

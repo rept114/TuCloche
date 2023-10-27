@@ -84,3 +84,22 @@ h4 {
     height: 100% !important;
     text-align: center !important;
 }
+
+/*Agregar al carrito*/
+.curved-table {
+    border-radius: 30px; /* Adjust the radius as needed */
+    overflow: hidden;
+}
+.curved-table th, .curved-table td {
+    padding: 10px;
+}
+
+.btn-dark-blue {
+background-color: #0b1a5c; /* Dark Blue color code */
+color: #fff; /* Text color */  
+}
+
+.btn {
+font-size: 21px; /* Adjust the font size as needed */
+}
+
