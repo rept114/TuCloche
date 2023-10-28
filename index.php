@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #061d4f;">
         <div class="container-fluid">
             <div id="logoulsa">
-                <a href="index.php"><img src="imgs/LOGO_ULSA.png" id="ulsa"></a>
+                <a href="" onclick="Inicio();"><img src="imgs/LOGO_ULSA.png" id="ulsa"></a>
                 <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
             </div>
             <form class="d-flex">

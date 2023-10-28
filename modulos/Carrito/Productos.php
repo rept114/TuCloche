@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="css/Productos.css">
 <div class="container text-center mt-5" id="iContainer">
     <div id="pageback">
-        <a href="index.php" class="btn back-btn">
+        <a href="" onclick="Inicio();" class="btn back-btn">
             <img src="imgs/back.png" alt="Back" style="max-width: 100%; max-height: 100%;">
             <h5>Atrás</h5>
         </a>
@@ -69,48 +69,16 @@
 </table>
 
 <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn btn-light curved-table" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar tarjeta de pago</button>
+  <button class="btn btn-light curved-table" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="ModalTarjeta();">Agregar tarjeta de pago</button>
   <br>
-  <button class="btn btn-dark-blue curved-table" type="button">Proceder al pago</button>
+  <button class="btn btn-dark-blue curved-table" type="button" onclick="Ppago();">Proceder al pago</button>
 </div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Tarjeta de pago</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <form>
-        <div class="mb-3">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
-        </div>
-        <div class="mb-3">
-            <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="Número tarjeta">
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="mm/yy">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="CVV">
-                </div>
-            </div>
-        </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recordar mi tarjeta</label>
-        </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-dark-blue curved-table" type="button">Agregar</button>
-      </div>
+      <!-- Contenido del modal -->
     </div>
   </div>
 </div>

@@ -63,3 +63,39 @@ function Carrito(){
         $("#dvContainer").html(data);
     });
 }
+
+function ModalTarjeta(){
+    $.post("modulos/Carrito/ModalTarjeta.php", {})
+    .done(function(data)
+    {
+        $("#exampleModal").html("");
+        $("#exampleModal").html(data);
+    });
+}
+
+function ModalMatricula(){
+    $.post("modulos/Carrito/ModalMatricula.php", {})
+    .done(function(data)
+    {
+        $("#exampleModal").html("");
+        $("#exampleModal").html(data);
+    });
+}
+
+function Ppago(){
+    $.post("modulos/Carrito/pago.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    })
+}
+
+function Inicio(){
+    $.post("modulos/Inicio/Index.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    })
+}
