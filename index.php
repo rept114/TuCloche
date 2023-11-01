@@ -64,6 +64,129 @@
         <div class="container border-top border-3" id="mnuGContainer">
         <br><br> 
         <h4>Menú General:</h4><br>
+        <div class="container">
+            <h4>Desayunos:</h4>
+            <div class="row row-cols-12 row-cols-md-3 g-4">
+                <?php
+                include 'appCode/clsProductos.php';   
+
+                $productos = new Productos();
+                $result = $productos->getDesayunosProductos();
+
+                foreach($result as $row)
+                {
+                ?>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="<?=$row["imagen"]?>" class="card-img-top custom-image" alt="Huevos" style="max-width: 100%; max-height: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title"><?=$row["nombre_productos"]?></h5>
+                            <p class="card-text"><?=$row["descripcion_productos"]?></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$<?=$row["precio_productos"]?></div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php       
+                }
+                ?>
+            </div>
+        </div><br><br>
+        <div class="container">
+            <h4>Comidas:</h4>
+            <div class="row row-cols-12 row-cols-md-3 g-4">
+                <?php 
+                $productos = new Productos();
+                $result = $productos->getComidasProductos();
+
+                foreach($result as $row)
+                {
+                ?>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="<?=$row["imagen"]?>" class="card-img-top custom-image" alt="Huevos" style="max-width: 100%; max-height: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title"><?=$row["nombre_productos"]?></h5>
+                            <p class="card-text"><?=$row["descripcion_productos"]?></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$<?=$row["precio_productos"]?></div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php       
+                }
+                ?>
+            </div>
+        </div><br><br>
+        <div class="container">
+            <h4>Snacks:</h4>
+            <div class="row row-cols-12 row-cols-md-3 g-4">
+                <?php 
+                $productos = new Productos();
+                $result = $productos->getSnacksProductos();
+
+                foreach($result as $row)
+                {
+                ?>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="<?=$row["imagen"]?>" class="card-img-top custom-image" alt="Huevos" style="max-width: 100%; max-height: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title"><?=$row["nombre_productos"]?></h5>
+                            <p class="card-text"><?=$row["descripcion_productos"]?></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$<?=$row["precio_productos"]?></div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php       
+                }
+                ?>
+            </div>
+        </div><br><br>
+        <div class="container">
+            <h4>Bebidas:</h4>
+            <div class="row row-cols-12 row-cols-md-3 g-4">
+                <?php  
+                $productos = new Productos();
+                $result = $productos->getBebidasProductos();
+
+                foreach($result as $row)
+                {
+                ?>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="<?=$row["imagen"]?>" class="card-img-top custom-image" alt="Huevos" style="max-width: 100%; max-height: 100%;">
+                        <div class="card-body">
+                            <h5 class="card-title"><?=$row["nombre_productos"]?></h5>
+                            <p class="card-text"><?=$row["descripcion_productos"]?></p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div style="font-size: 22px;">$<?=$row["precio_productos"]?></div>
+                                <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                                    <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php       
+                }
+                ?>
+            </div>
+        </div>
+    </div>
     <script src="vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
     <script src="js/index.js?v=1"></script>
     <!--Boostrap 5.0 js!-->
