@@ -1,0 +1,46 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+/* Estilos de producto en rebaja */
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Estilos de formulario de preguntas */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Estilos de categoría de productos */
+.card {
+  height: 100%;
+}
+
+.card-title, .card-text {
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Otros estilos según tu diseño y preferencias */
