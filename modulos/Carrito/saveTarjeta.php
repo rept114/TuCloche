@@ -1,5 +1,6 @@
 <?php
-    include '../../appCode/clsProductos.php';   
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    include '../../appCode/clsTarjeta.php';   
 
     // Obtener los datos del POST
     $nombre_completo = $_POST["nombre_completo"];
