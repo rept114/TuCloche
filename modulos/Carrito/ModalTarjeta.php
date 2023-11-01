@@ -7,20 +7,20 @@
         <div class="modal-body">
         <form>
         <div class="mb-3">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
+            <input type="email" class="form-control" id="nombre_completo" placeholder="Nombre completo">
         </div>
         <div class="mb-3">
-            <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="Número tarjeta">
+            <input type="email" class="form-control" id="numero_tarjeta" placeholder="Número tarjeta">
         </div>
         <div class="row">
             <div class="col">
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="mm/yy">
+                    <input type="email" class="form-control" id="vencimiento" placeholder="mm/yy">
                 </div>
             </div>
             <div class="col">
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="CVV">
+                    <input type="email" class="form-control" id="codigo_seguridad" placeholder="CVV">
                 </div>
             </div>
         </div>

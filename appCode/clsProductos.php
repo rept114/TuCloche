@@ -42,5 +42,11 @@ class Productos
         return $this->objMysql->ejecutaSPSafe('sp_getMenuSemanal_producto_DB',null,$MQ);   
     }
 
+    // Insert o Update los datos de una tarjeta
+    public function insertTarjeta($nombre_completo, $numero_tarjeta, $vencimiento, $codigo_seguridad, $MQ=false){
+        return $this->objMysql->ejecutaSPSafe('sp_insert_tarjeta_db',array($nombre_completo, $numero_tarjeta, $vencimiento, $codigo_seguridad),$MQ);   
+    }
+    
+
 }
 ?>
