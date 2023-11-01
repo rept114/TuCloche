@@ -16,7 +16,7 @@
     {  
       $this->conectar(0);
     }
-   
+    
     public function conectar($i)
     {
       $objConfig = new clsConfig();

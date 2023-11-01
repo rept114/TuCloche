@@ -1,25 +1,25 @@
 <?php
-    include '../../appCode/clsProductors.php';   
-       
-    /*Se guarda los parametro recibido por POST*/
+    include '../../appCode/clsTarjeta.php';   
+
+    // Obtener los datos del POST
     $nombre_completo = $_POST["nombre_completo"];
     $numero_tarjeta = $_POST["numero_tarjeta"];
     $vencimiento = $_POST["vencimiento"];
     $codigo_seguridad = $_POST["codigo_seguridad"];
 
-    
-    $tarjetas = new Tarjetas();    
+
+    $tarjetas = new Tarjeta();    
     
     try{
-        /*Se intenta insertar el cliente, se pasan los parametro ID, Nombre, RFC y Telefono*/
+        /*Se intenta insertar la tarjeta, se pasan los parámetros*/
         if ($tarjetas->insertTarjeta($nombre_completo, $numero_tarjeta, $vencimiento, $codigo_seguridad)){
             echo "Éxito";      
         }
         else{
-            throw new Exception('Error: No se encontró informacion del cliente para eliminar');                    
+            throw new Exception('Error: No se encontró información de la tarjeta para eliminar');                    
         }
     }
     catch(Exception $e){                
-       echo "Error"; 
+        echo "Error"; 
     }  
 ?>
