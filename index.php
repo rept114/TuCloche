@@ -69,10 +69,10 @@
             <div class="row row-cols-12 row-cols-md-3 g-4">
                 <?php
                 include 'appCode/clsProductos.php';   
-                
+
                 $productos = new Productos();
                 $result = $productos->getDesayunosProductos();
-                
+
                 foreach($result as $row)
                 {
                 ?>
@@ -102,7 +102,7 @@
                 <?php 
                 $productos = new Productos();
                 $result = $productos->getComidasProductos();
-                
+
                 foreach($result as $row)
                 {
                 ?>
@@ -132,7 +132,7 @@
                 <?php 
                 $productos = new Productos();
                 $result = $productos->getSnacksProductos();
-                
+
                 foreach($result as $row)
                 {
                 ?>
@@ -162,7 +162,7 @@
                 <?php  
                 $productos = new Productos();
                 $result = $productos->getBebidasProductos();
-                
+
                 foreach($result as $row)
                 {
                 ?>
@@ -186,7 +186,7 @@
                 ?>
             </div>
         </div>
-    </div>    
+    </div>
     <script src="vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
     <script src="js/index.js?v=1"></script>
     <!--Boostrap 5.0 js!-->
