@@ -132,6 +132,7 @@ function saveCliente(paramId){
             if (data == "Éxito"){
                 Swal.fire('Buen trabajo!', 'Se hizo el pago con éxito!', 'success');                    
                 /* Si deseas actualizar la vista después de guardar, llama a la función correspondiente aquí */
+                ModalMatricula();
             }
             else{
                 Swal.fire('Error!', 'Los datos no se guardaron, verifique su conexión a internet', 'error');                    

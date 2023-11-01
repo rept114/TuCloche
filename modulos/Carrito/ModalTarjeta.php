@@ -31,7 +31,7 @@
         </form>
         </div>
         <div class="modal-footer">
-        <button class="btn btn-dark-blue curved-table" type="button" onclick="saveCliente(); ModalMatricula();">Agregar</button>
+        <button class="btn btn-dark-blue curved-table" type="button" onclick="saveCliente();">Agregar</button>
         </div>
     </div>
 </div>

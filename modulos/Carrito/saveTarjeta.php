@@ -1,5 +1,4 @@
 <?php
-    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     include '../../appCode/clsTarjeta.php';   
 
     // Obtener los datos del POST
@@ -8,13 +7,8 @@
     $vencimiento = $_POST["vencimiento"];
     $codigo_seguridad = $_POST["codigo_seguridad"];
 
-    // Mostrar los datos en pantalla (esto es solo para depuración)
-    echo "Nombre Completo: " . $nombre_completo . "<br>";
-    echo "Número de Tarjeta: " . $numero_tarjeta . "<br>";
-    echo "Vencimiento: " . $vencimiento . "<br>";
-    echo "Código de Seguridad: " . $codigo_seguridad . "<br>";
 
-    $tarjetas = new Tarjetas();    
+    $tarjetas = new Tarjeta();    
     
     try{
         /*Se intenta insertar la tarjeta, se pasan los parámetros*/
