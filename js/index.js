@@ -105,7 +105,7 @@ function Inicio(){
     })
 }
 
-/*Guardar tarjeta*/
+/Guardar tarjeta/
 function saveCliente(paramId){     
     /* Obtiene los valores capturados en los inputs */
     var paramNombre = $("#nombre_completo").val();
