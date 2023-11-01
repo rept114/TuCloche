@@ -79,7 +79,7 @@ function ModalTarjeta(){
 }
 
 function ModalMatricula(){
-    $.post("modulos/Carrito/ModalMatricula.php", {id: paramId})
+    $.post("modulos/Carrito/ModalMatricula.php", {})
     .done(function(data)
     {
         $("#exampleModal").html("");
@@ -105,42 +105,89 @@ function Inicio(){
     })
 }
 
-/*
-    Esta funcion guarda los datos de la tarjeta
-    Si el paramId = 0 es un insert o nueva tarjeta
-    Si el paramId > 0 es un update
-*/
+/*Guardar tarjeta*/
 function saveCliente(paramId){     
-    /*Obtiene los valores capturados en los inputs*/
-    paramNombre = $("#txtNombre").val();
-    paramRfc = $("#txtRfc").val();
-    paramTelefono = $("#txtTelefono").val();
+    /* Obtiene los valores capturados en los inputs */
+    var paramNombre = $("#nombre_completo").val();
+    var paramTarjeta = $("#numero_tarjeta").val();
+    var paramVencimiento = $("#vencimiento").val();
+    var paramCodigoS = $("#codigo_seguridad").val();
 
-    /* Validaciones de contenido*/
-    if (paramNombre == "" || paramRfc == "" || paramTelefono == ""){
-        /*Algun input esta vacio*/
-        swal.fire('Error!','Algunos datos estan vacios','error');
+    /* Validaciones de contenido */
+    if (paramNombre == "" || paramTarjeta == "" || paramVencimiento == "" || paramCodigoS == ""){
+        /* Algun input está vacío */
+        swal.fire('Error!','Algunos datos están vacíos','error');
     }
     else{
-        /*Envia los valores al guardar*/
-        $.post("modulos/clientes/saveCliente.php", 
+        /* Envia los valores al guardar */
+        $.post("modulos/carrito/saveTarjeta.php", 
         {
-            id: paramId,
-            nombre: paramNombre,
-            rfc: paramRfc,
-            telefono: paramTelefono,               
+            nombre_completo: paramNombre,
+            numero_tarjeta: paramTarjeta,
+            vencimiento: paramVencimiento,    
+            codigo_seguridad: paramCodigoS,           
         })
         .done(function(data) 
         {   
             if (data == "Éxito"){
-                Swal.fire('Buen trabajo!', 'Se registró un nuevo cliente', 'success');                    
-                getCliente();            
+                Swal.fire('Buen trabajo!', 'Se hizo el pago con éxito!', 'success');                    
+                /* Si deseas actualizar la vista después de guardar, llama a la función correspondiente aquí */
+                ModalMatricula();
             }
             else{
-                Swal.fire('Error!', 'Los datos no se guardaron, verifique su conexion a internet', 'error');                    
-                getCliente();
+                Swal.fire('Error!', 'Los datos no se guardaron, verifique su conexión a internet', 'error');                    
             }
+        })
+        .fail(function() {
+            Swal.fire('Error!', 'Ocurrió un error al realizar la solicitud', 'error');
         });  
     }
-    
 }
+
+
+// sirve para delimitar la escritura en los input date
+
+function formatFecha(event) {
+    let input = event.target;
+    let value = input.value.replace(/\D/g, ''); // Elimina caracteres no numéricos
+    if (value.length > 2) {
+        value = value.slice(0, 2) + '/' + value.slice(2); // Inserta la barra
+    }
+    input.value = value;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    let vencimientoInput = document.getElementById('vencimiento');
+    if (vencimientoInput) {
+        vencimientoInput.addEventListener('input', formatFecha);
+    }
+});
+
+//tarjeta numeros
+function formatTarjeta(event) {
+    let input = event.target;
+    let value = input.value.replace(/\D/g, ''); // Elimina caracteres no numéricos
+    value = value.replace(/(\d{4})(?=\d)/g, '$1-'); // Inserta guiones cada 4 dígitos
+    input.value = value;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    let tarjetaInput = document.getElementById('numero_tarjeta');
+    if (tarjetaInput) {
+        tarjetaInput.addEventListener('input', formatTarjeta);
+    }
+});
+
+//Limitamos a los numeros solamente
+function formatCodigo(event) {
+    let input = event.target;
+    let value = input.value.replace(/\D/g, ''); // Elimina caracteres no numéricos
+    input.value = value;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    let codigoInput = document.getElementById('codigo_seguridad');
+    if (codigoInput) {
+        codigoInput.addEventListener('input', formatCodigo);
+    }
+});
