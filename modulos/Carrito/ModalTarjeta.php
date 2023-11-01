@@ -10,17 +10,17 @@
             <input type="email" class="form-control" id="nombre_completo" placeholder="Nombre completo">
         </div>
         <div class="mb-3">
-            <input type="email" class="form-control" id="numero_tarjeta" placeholder="Número tarjeta">
+            <input type="email" class="form-control" id="numero_tarjeta" placeholder="Número tarjeta" maxlength="19" oninput="formatTarjeta(event);">
         </div>
         <div class="row">
             <div class="col">
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="vencimiento" placeholder="mm/yy">
+                    <input type="email" class="form-control" id="vencimiento" placeholder="mm/yyyy" maxlength="7" oninput="formatFecha(event)">
                 </div>
             </div>
             <div class="col">
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="codigo_seguridad" placeholder="CVV">
+                    <input type="email" class="form-control" id="codigo_seguridad" maxlength="3" oninput="formatCodigo(event);" placeholder="CVV">
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@
         </form>
         </div>
         <div class="modal-footer">
-        <button class="btn btn-dark-blue curved-table" type="button" onclick="ModalMatricula();">Agregar</button>
+        <button class="btn btn-dark-blue curved-table" type="button" onclick="saveCliente(); ModalMatricula();">Agregar</button>
         </div>
     </div>
 </div>
