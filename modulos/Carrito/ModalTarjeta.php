@@ -1,8 +1,7 @@
 <div class="modal-dialog curved-table">
     <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header d-flex justify-content-center">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Tarjeta de pago</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
         <form>
