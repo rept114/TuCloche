@@ -39,9 +39,12 @@
                     <td class="h5">Total</td>
                     <td class="h5">$43.00</td>
                 </tr>
+                <tr>
+                    <td class="h5">Total</td>
+                    <td class="h5">$43.00</td>
+                </tr>
             </tbody>
         </table>
-
         <script src="../vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
         <script src="../js/index.js?v=1"></script>
         <!--Boostrap 5.0 js!-->
