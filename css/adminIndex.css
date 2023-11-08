@@ -1,0 +1,87 @@
+
+/*Cards*/
+.square-btn {
+    width: 200px; /* Adjust the width to make it square */
+    height: 200px; /* Adjust the height to make it square */
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    line-height: 100px; /* Vertically center the text */
+    border: none; /* Remove the default button border */
+}
+
+/*Define el tamaño del carrito de compras*/
+.carrito-btn {
+    width: 80px; /* Adjust the width to make it square */
+    height: 80px; /* Adjust the height to make it square */
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    line-height: 100px; /* Vertically center the text */
+    border: none; /* Remove the default button border */
+}
+
+/*Acomoda el back con el bienvenidos*/
+#pageback {
+    display: flex;
+    align-items: center;
+}
+  
+h4 {
+    margin: 0;
+    flex-grow: 1; /* Esto hará que el texto tome todo el espacio restante */
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 36px !important;
+}
+  
+/*Define el tamaño del icono del back*/
+.back-btn {
+    width: 80px; /* Adjust the width to make it square */
+    height: 80px; /* Adjust the height to make it square */
+    background-size: cover;
+    text-align: left;
+    padding: 0;
+    line-height: 100px; /* Vertically center the text */
+    border: none; /* Remove the default button border */
+    margin-right: -7.5%; /* Ajusta el margen según sea necesario */
+}
+
+/*¿Qué define?*/
+.custom-image {
+    height: 200px; /* Set the height you desire, e.g., 200px */
+    width: 100%; /* Maintain the original aspect ratio */
+    object-fit: cover; /* Preserve aspect ratio and cover the container */
+}
+
+/*Control del texto TuCloche*/  
+.navbar-brand {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 48px !important; /* Cambia este valor según sea necesario */
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  h5 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  /*Acomoda el logo y el texto*/
+  #ulsa {
+    width: 80px; /* Adjust the width to make it square */
+    height: 80px; /* Adjust the height to make it square */
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    line-height: 100px; /* Vertically center the text */
+    border: none; /* Remove the default button border */
+  }
+
+  #logoulsa {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
+    text-align: center !important;
+}
+
