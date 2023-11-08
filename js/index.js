@@ -105,7 +105,28 @@ function Inicio(){
     })
 }
 
-/Guardar tarjeta/
+
+function InicioPago(){
+    $.post("modulos/Inicio/Index.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+
+        // Mostrar el modal
+        $("#myModal").css("display", "block");
+    })
+}
+
+$(document).ready(function(){
+    $(".close").click(function(){
+        $("#myModal").css("display", "none");
+    });
+});
+
+
+
+/*Guardar tarjeta*/
 function saveCliente(paramId){     
     /* Obtiene los valores capturados en los inputs */
     var paramNombre = $("#nombre_completo").val();
