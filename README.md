@@ -42,4 +42,4 @@ El objetivo de Carrillo Perez (2018) fue crear una experiencia de usuario la cu�
 
 El proyecto logró un diseño web **intuitivo** y **fácil de usar** para el cliente, lo cuál aumentó la visibilidad de la compañía y mejoró la experiencia del usuario, volviéndola más sencilla y amena. 
 
-Relacionándolo con nuestro proyecto**,** el diseño de una aplicación es de vital importancia, ya que esta es la parte con la que interactúa el usuario. Nosotros buscaremos generar un diseño el cuál sea intuitivo de navegar y en el cuál se pueda _**acceder a toda la información de la cafetería de la escuela de manera sencilla**_.
+Relacionándolo con nuestro proyecto, el diseño de una aplicación es de vital importancia, ya que esta es la parte con la que interactúa el usuario. Nosotros buscaremos generar un diseño el cuál sea intuitivo de navegar y en el cuál se pueda _**acceder a toda la información de la cafetería de la escuela de manera sencilla**_.
