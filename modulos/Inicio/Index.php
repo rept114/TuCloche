@@ -39,7 +39,7 @@
     <h4>Desayunos:</h4>
     <div class="row row-cols-12 row-cols-md-3 g-4">
         <?php
-        include 'appCode/clsProductos.php';   
+        include '../../appCode/clsProductos.php';   
         
         $productos = new Productos();
         $result = $productos->getDesayunosProductos();
@@ -156,4 +156,13 @@
         }
         ?>
     </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="pagoModal" tabindex="-1" aria-labelledby="pagoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Contenido del modal -->
+    </div>
+  </div>
 </div>

@@ -9,6 +9,10 @@ $(document).ready(function() {
     }
 });
 
+$(document).on("click", ".close", function(){
+    $("#pagoModal").css("display", "none");
+});
+
 
 function Desayunos(){
     $.post("modulos/Categorias/Desayunos.php", {})
@@ -106,7 +110,7 @@ function Inicio(){
 }
 
 
-function InicioPago(){
+function ModalPagoExitoso(){
     $.post("modulos/Inicio/Index.php", {})
     .done(function(data)
     {
@@ -114,17 +118,9 @@ function InicioPago(){
         $("#dvContainer").html(data);
 
         // Mostrar el modal
-        $("#myModal").css("display", "block");
+        $("#pagoModal").css("display", "block");
     })
 }
-
-$(document).ready(function(){
-    $(".close").click(function(){
-        $("#myModal").css("display", "none");
-    });
-});
-
-
 
 /*Guardar tarjeta*/
 function saveCliente(paramId){     
