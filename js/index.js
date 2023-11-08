@@ -105,6 +105,7 @@ function Inicio(){
     })
 }
 
+
 function InicioPago(){
     $.post("modulos/Inicio/Index.php", {})
     .done(function(data)

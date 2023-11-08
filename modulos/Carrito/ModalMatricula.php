@@ -17,7 +17,7 @@
             </div>
         </div>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer d-flex justify-content-center">
         <button class="btn btn-dark-blue curved-table" type="button" onclick="ModalMatricula();">Agregar</button>
         </div>
     </div>
