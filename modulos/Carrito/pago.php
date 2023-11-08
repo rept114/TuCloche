@@ -1,6 +1,6 @@
 <div class="modal-dialog curved-table">
     <div class="modal-content">
-        <span class="close">&times;</span>
+        <button class="close" onclick="Inicio();">&times;</button>
         <p>Contenido del modal aquí</p>
     </div>
 </div>
