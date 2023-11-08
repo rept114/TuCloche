@@ -4,7 +4,7 @@
 
 ### **1.1 Definición del Problema**
 
-### **1.2 Antecedentes:**
+### **1.2 Antecedentes**
 
        Diseño de aplicaciones
 
@@ -14,16 +14,16 @@
 
 ### **1.5 Justificación**
 
-- Accesibilidad
+       - Accesibilidad
 
-- Interfaz Amigable
+       - Interfaz Amigable
 
-- Actualizaciones y Mantenimiento
-
-- Costos Potencialmente Reducidos
-
-- Alcance Amplio
-
-- Recolección de Datos
-
-- Facilidad de Integración
+       - Actualizaciones y Mantenimiento
+       
+       - Costos Potencialmente Reducidos
+       
+       - Alcance Amplio
+       
+       - Recolección de Datos
+       
+       - Facilidad de Integración
