@@ -27,3 +27,4 @@
 
     <div style="width: 100%; height: 100%; color: black; font-size: 36px; font-family: Ubuntu; font-weight: 400; word-wrap: break-word">Pedidos a realizar:</div>
     <div style="width: 100%; height: 100%; border: 1px black solid"></div>
+</body>
