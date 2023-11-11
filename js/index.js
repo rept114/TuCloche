@@ -9,11 +9,6 @@ $(document).ready(function() {
     }
 });
 
-$(document).on("click", ".close", function(){
-    $("#pagoModal").css("display", "none");
-});
-
-
 function Desayunos(){
     $.post("modulos/Categorias/Desayunos.php", {})
     .done(function(data)
@@ -120,6 +115,20 @@ function ModalPagoExitoso(){
         // Mostrar el modal
         $("#pagoModal").css("display", "block");
     })
+}
+
+//buscamos por la matricula el nombre
+function buscarNombre() {
+    var matricula = $("#matricula").val();
+    
+    $.post("modulos/carrito/searchNombre.php", { matricula: matricula })
+    .done(function(data) {
+
+        $("#nombre").val(data);
+    })
+    .fail(function() {
+        $("#nombre").text("Error al buscar el nombre.");
+    });
 }
 
 /*Guardar tarjeta*/
