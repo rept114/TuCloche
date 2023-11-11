@@ -22,26 +22,31 @@
         <table class="table curved-table table-hover table-light table-borderless mx-auto my-auto p-0">
             <thead class="text-center">
                 <tr>
-                    <th scope="col" class="h4">Pedido</th>
-                    <th scope="col" class="h4">Precio</th>
+                    <th scope="col" class="h4">Pedido #1</th>
+                    <th scope="col" class="h4">         </th>
+                    <th scope="col" class="h4">#199561</th>
                 </tr>
             </thead>
-            <tbody class="text-center">
+            <tbody class="text-left">
                 <tr>
-                    <td class="h5">Hot Cakes</td>
-                    <td class="h5">$29.00</td>
+                    <td class="h5">2 Papas a la francesa</td>
+                    <td class="h5"> </td>
+                    <td class="h5"> </td>
                 </tr>
                 <tr>
                     <td class="h5">Chocomilk</td>
-                    <td class="h5">$22.00</td>
+                    <td class="h5"> </td>
+                    <td class="h5"> </td>
                 </tr>
                 <tr>
-                    <td class="h5">Total</td>
-                    <td class="h5">$43.00</td>
+                    <td class="h5">1 Orden Quesadillas</td>
+                    <td class="h5"> </td>
+                    <td class="h5"> </td>
                 </tr>
                 <tr>
-                    <td class="h5">Total</td>
-                    <td class="h5">$43.00</td>
+                    <td class="h5"> </td>
+                    <td class="h5"> </td>
+                    <td class="h5"> Pedido listo </td>
                 </tr>
             </tbody>
         </table>

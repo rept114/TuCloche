@@ -45,28 +45,28 @@
                 </a>
             </div>
 
-<table class="table curved-table table-hover table-light table-borderless">
-    <thead class="text-center">
-        <tr>
-            <th scope="col" class="h4">Pedido</th>
-            <th scope="col" class="h4">Precio</th>
-        </tr>
-    </thead>
-    <tbody class="text-center">
-        <tr>
-            <td class="h5">Hot Cakes</td>
-            <td class="h5">$29.00</td>
-        </tr>
-        <tr>
-            <td class="h5">Chocomilk</td>
-            <td class="h5">$22.00</td>
-        </tr>
-        <tr>
-            <td class="h5">Total</td>
-            <td class="h5">$43.00</td>
-        </tr>
-    </tbody>
-</table>
+        <table class="table curved-table table-hover table-light table-borderless">
+            <thead class="text-center">
+                <tr>
+                    <th scope="col" class="h4">Pedido</th>
+                    <th scope="col" class="h4">Precio</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td class="h5">Hot Cakes</td>
+                    <td class="h5">$29.00</td>
+                </tr>
+                <tr>
+                    <td class="h5">Chocomilk</td>
+                    <td class="h5">$22.00</td>
+                </tr>
+                <tr>
+                    <td class="h5">Total</td>
+                    <td class="h5">$43.00</td>
+                </tr>
+            </tbody>
+        </table>
 
 <div class="d-grid gap-2 col-6 mx-auto">
   <button class="btn btn-light curved-table" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="ModalTarjeta();">Agregar tarjeta de pago</button>
