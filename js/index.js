@@ -217,3 +217,44 @@ document.addEventListener('DOMContentLoaded', function() {
         codigoInput.addEventListener('input', formatCodigo);
     }
 });
+
+//agregar al carrito
+function insertarEnBaseDeDatos(index) {
+    /* Obtiene los valores capturados en los div */
+    var paramNombre = $("#nombreProducto" + index).html();
+    var paramPrecio = $("#precioProducto" + index).html().replace('$', '');
+
+    console.log("Nombre: ", paramNombre);
+    console.log("Precio: ", paramPrecio);
+    
+    /* Validaciones de contenido */
+    if (paramNombre == "" || paramPrecio == ""){
+        /* Algun input está vacío */
+        swal.fire('Error!','Algunos datos están vacíos','error');
+    }
+    else{
+        /* Envia los valores al servidor */
+        $.post("modulos/Carrito/insertProductospPedir.php", 
+        {
+            producto: paramNombre,
+            precio: paramPrecio,          
+        })
+        .done(function(data) {   
+            if (data === "Éxito") { // Asegúrate de que la comparación sea estricta (===)
+                Swal.fire('Buen trabajo!', 'Se hizo el pago con éxito!', 'success');
+                // Si deseas actualizar la vista después de guardar, llama a la función correspondiente aquí
+            } else {
+                Swal.fire('Error!', 'Los datos no se guardaron, verifique su conexión a internet', 'error');
+            }
+        })
+        .fail(function() {
+            Swal.fire('Error!', 'Ocurrió un error al realizar la solicitud', 'error');
+        });
+        
+    }
+}
+
+
+
+
+
