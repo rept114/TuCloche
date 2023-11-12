@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="vendor/sweetalert2/dist/sweetalert2.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<style>
+    .circular-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+</style>
 <body>
     <div class="jm-loadingpage"></div>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #061d4f;">
@@ -17,7 +27,8 @@
                 <a href="" onclick="Inicio();"><img src="imgs/LOGO_ULSA.png" id="ulsa"></a>
                 <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
             </div>
-            <form class="d-flex">
+            <form class="d-flex align-items-center">
+            <button class="btn circular-btn">1</button>
             <button class="btn carrito-btn">
                 <a href="#" onclick="Carrito();"><img src="imgs/Carrito.png" alt="Carrito" style="max-width: 100%; max-height: 100%;"></a>
             </button>
