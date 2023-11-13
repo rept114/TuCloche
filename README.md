@@ -105,3 +105,25 @@ Un sitio web puede permitir la recopilación de datos de manera más efectiva, l
 Puede ser más sencillo integrar sistemas de pago en línea y herramientas de gestión de pedidos en un sitio web.
 
 
+
+
+## **1.6 Impacto/Beneficios Esperados**
+
+Se espera que esta aplicación web agilice el proceso de usar la cafetería en la Universidad La Salle Noroeste. Tanto el alumnado cómo el servicio docente obtendrán una manera más sencilla de adquirir alimentos en la institución, facilitando la adquisición de estos.
+
+Beneficios adicionales incluyen: Reducción de filas en cafetería, mayor personalización a la hora de pedir un producto, y en general, una mejor experiencia para todos los involucrados.
+
+‌
+
+## **1.7 Alcance del proyecto**
+
+- Que se pueda ver el menú.
+- Poder seleccionar los productos. 
+- Preguntar si el pedido es correcto.
+- Si se escoge que no, se regresa al menú.
+- Si se escoge que sí, se va a método de pago.
+- Después de pagar que se entregue comprobante.
+- Se regresa al menú.
+- Base de datos de los productos
+- Diseño integral de la aplicación.
+
