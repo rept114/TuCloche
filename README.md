@@ -45,7 +45,7 @@ El proyecto logró un diseño web **intuitivo** y **fácil de usar** para el cli
 
 Relacionándolo con nuestro proyecto, el diseño de una aplicación es de vital importancia, ya que esta es la parte con la que interactúa el usuario. Nosotros buscaremos generar un diseño el cuál sea intuitivo de navegar y en el cuál se pueda _**acceder a toda la información de la cafetería de la escuela de manera sencilla**_.
 
-López Godoy (2019). El objetivo del trabajo es abordar la problemática en la cafetería "_DOLCE COFFEE_" relacionada con la alta demanda de clientes, que resulta en retrasos en los **procesos de atención**, **selección de platos**, **pago y entrega de pedidos**. El trabajo propone el desarrollo de una <u>aplicación web intuitiva y eficiente que agilice estos procesos, mejorando la experiencia de los clientes y optimizando la gestión</u> de la cafetería.
+López Godoy (2019). El objetivo del trabajo es abordar la problemática en la cafetería "_DOLCE COFFEE_" relacionada con la alta demanda de clientes, que resulta en retrasos en los **procesos de atención**, **selección de platos**, **pago y entrega de pedidos**. El trabajo propone el desarrollo de una <sup>aplicación web intuitiva y eficiente que agilice estos procesos, mejorando la experiencia de los clientes y optimizando la gestión</sup> de la cafetería.
 ‌
 Esta enfrenta dificultades debido a la creciente demanda de clientes que resulta en retrasos y errores en el proceso de atención y servicio. Los clientes se quejan de la lentitud en la selección de platos y el proceso de pago. La investigación incluye un análisis metodológico y bibliográfico para comprender la problemática y desarrollar una solución. Se opta por el modelo de desarrollo de software "_Modelo de Cascada_" y se crea una aplicación web amigable e intuitiva que permitirá a los clientes realizar pedidos de manera eficiente y rápida. La aplicación también ofrece reportes de ventas y otros datos relevantes.
 
@@ -58,3 +58,50 @@ El trabajo existente se relaciona con el estudio que se va a realizar en el ámb
 
 
 Los desafíos identificados en el trabajo previo, como la alta demanda de clientes y la necesidad de agilizar los procesos, son problemáticas que el nuevo estudio también busca abordar. La aplicación propuesta en el trabajo anterior podría servir como referencia y fuente de inspiración para el desarrollo de la aplicación en el nuevo estudio. 
+
+## **1.3 Objetivo General**
+
+Diseñar y desarrollar una página web capaz de conectarse a la cafetería que permita a alumnos y maestros realizar pedidos anticipados de comida, con el fin de optimizar y maximizar el tiempo de alimentación disponible durante los intervalos entre clases en el entorno escolar.
+
+‌
+
+## **1.4 Objetivos Específicos** 
+
+- Diseñar un concepto de página que sirva como guía para desarrollarla.
+- Desarrollar una interfaz de usuario intuitiva y fácil de usar que permita a los usuarios realizar pedidos de comida de manera rápida y sencilla.
+- Diseñar un sistema de navegación eficiente que optimice la experiencia del usuario desde la selección de alimentos hasta la confirmación del pedido.
+- Desarrollar una base de datos que contenga el menú disponible de la cafetería.
+
+‌
+
+## **1.5 Justificación**
+
+- **Accesibilidad** 
+
+Un sitio web puede ser accesible desde una variedad de dispositivos, como computadoras, tabletas y teléfonos móviles, lo que permitiría a los usuarios realizar pedidos desde cualquier lugar con conexión a internet.
+
+- **Interfaz Amigable** 
+
+Un sitio web bien diseñado puede ofrecer una interfaz fácil de usar para los usuarios, lo que facilita el proceso de realizar pedidos incluso para aquellos con menos experiencia tecnológica.
+
+- **Actualizaciones y Mantenimiento** 
+
+Los sitios web pueden ser actualizados y mejorados de manera eficiente en comparación con aplicaciones móviles, lo que te permitiría implementar cambios y correcciones de manera rápida.
+
+- **Costos Potencialmente Reducidos** 
+
+Desarrollar y mantener un sitio web puede ser menos costoso en comparación con el desarrollo de aplicaciones móviles para diferentes plataformas.
+
+- **Alcance Amplio** 
+
+Un sitio web podría llegar a un público más amplio, ya que no estaría limitado a un sistema operativo específico, como en el caso de aplicaciones móviles.
+
+- **Recolección de Datos** 
+
+Un sitio web puede permitir la recopilación de datos de manera más efectiva, lo que te brindará información valiosa sobre las preferencias de los usuarios y los patrones de consumo.
+
+- **Facilidad de Integración** 
+
+Puede ser más sencillo integrar sistemas de pago en línea y herramientas de gestión de pedidos en un sitio web.
+
+
