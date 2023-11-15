@@ -9,36 +9,34 @@
     </div>  
 </div>
 <br><br>
+<?php
+    include '../../appCode/clsUsuarios.php';   
+    
+    $usuarios = new Usuarios();
+    $result = $usuarios->getPedidosAgregados();
+    foreach($result as $row)
+    {
+?>
 <div class="container border-top border-4 row row-cols-1 row-cols-md-3 g-4" id="cContainer"></div><br>
         <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
                 <div class="card h-100">
-                <img src="imgs/Hotcakes.jpg" class="card-img-top custom-image" alt="Hot Cakes">
+                <img src="<?=$row["img"]?>" class="card-img-top custom-image" alt="Hot Cakes">
                 <div class="card-body">
-                    <h5 class="card-title">Hot Cakes</h5>
+                    <h5 class="card-title"><?=$row["producto"]?></h5>
                     <div class="d-flex justify-content-between align-items-center">
-                        <div style="font-size: 22px;">$29.00</div>
+                        <div style="font-size: 22px;">$<?=$row["precio"]?></div>
                         <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                            <img src="imgs/menos.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                            <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
                         </button>
                     </div>
                 </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                <img src="imgs/Chocomilk.jpg" class="card-img-top custom-image" alt="Chocomilk" style="max-width: 100%; max-height: 100%;">
-                <div class="card-body">
-                    <h5 class="card-title">Chocomilk</h5>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div style="font-size: 22px;">$22.00</div>
-                        <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                            <img src="imgs/menos.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
-                        </button>
-                    </div>
-                </div>
-                </div>
-            </div>
+        </div>
+<?php
+}
+?>
             <div class="card text-bg-dark">
                 <a href="#" class="btn">
                     <img src="imgs/PLUS_CARRITO.png" class="card-img img-fluid" alt="Agregar" style="max-width: 300px; max-height: 300px;">
@@ -53,21 +51,21 @@
                 </tr>
             </thead>
             <tbody class="text-center">
+                <?php    
+                    $usuarios = new Usuarios();
+                    $result = $usuarios->getPedidosAgregados();
+                    foreach($result as $row)
+                    {
+                ?>
                 <tr>
-                    <td class="h5">Hot Cakes</td>
-                    <td class="h5">$29.00</td>
+                    <td class="h5"><?=$row["producto"]?></td>
+                    <td class="h5">$<?=$row["precio"]?></td>
                 </tr>
-                <tr>
-                    <td class="h5">Chocomilk</td>
-                    <td class="h5">$22.00</td>
-                </tr>
-                <tr>
-                    <td class="h5">Total</td>
-                    <td class="h5">$43.00</td>
-                </tr>
+                <?php
+                    }
+                ?>
             </tbody>
         </table>
-
 <div class="d-grid gap-2 col-6 mx-auto">
   <button class="btn btn-light curved-table" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="ModalTarjeta();">Agregar tarjeta de pago</button>
   <br>

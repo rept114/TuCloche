@@ -61,57 +61,55 @@
 		  echo "<span style='color:#8E1345'><b>".$this->qq."</b></span>"; 
     }	
 
-    public function ejecutaSPSafe($SP, $params,$MQ=false)
+    public function ejecutaSPSafe($SP, $params, $MQ = false)
     {
-      try 
-      { 
-        $query = "CALL akconcep_equipo2.".$SP."( ";
-        $this->MQ = $MQ;
-        $this->qq = $query;
-        $this->params = $params;
-
-        if(is_array($params))
-        {
-          foreach($params as $index=>$value)
-          {  
-            $query.="?,";
-          }
-          $query = substr($query,0,(strlen($query)-1)); //quita la ultima coma ,
-        }
-        else if($params!=""){$query.="?"; }  // un solo parametro                                           
-        $query.=") ";  
-    
-	      /* BIND PARAMS */
- 	      $i = 1;
-	      $stmt = $this->sqlsrv_conn->prepare($query); // se prepara el query
-	      if(is_array($params))
-        {
-          foreach($params as $index=>&$value)
-          {	
-		 	      $stmt->bindParam($i, $value, PDO::PARAM_STR);
-            $i+=1;
-          }
-        }
-        else if($params!="")
+        try 
         { 
-          $stmt->bindParam($i,$params, PDO::PARAM_STR); 
-        } 
-	  
-		    $stmt->execute();
-		    $rs = $stmt->fetchAll();
-
-    	  // if($qq)$this->mostrarQuery();
-        if($this->DEPURAR || $this->MQ)
-          $this->mostrarQuery();
+            $query = "CALL akconcep_equipo2.".$SP."( ";
+            $this->MQ = $MQ;
+            $this->qq = $query;
+            $this->params = $params;
+    
+            if (is_array($params)) {
+                foreach ($params as $index => $value) {
+                    $query .= "?,";
+                }
+                $query = substr($query, 0, (strlen($query) - 1)); // quita la última coma ,
+            } else if ($params != "") {
+                $query .= "?";
+            }
+            $query .= ") ";  
         
-		    return $rs;
-
-      }
-      catch (Exception $e) 
-      { 
-        echo  $e->getMessage();  
-      } 
-   }//fin funcion ejecutaSPSafe 
+            /* BIND PARAMS */
+            $i = 1;
+            $stmt = $this->sqlsrv_conn->prepare($query); // se prepara el query
+            if (is_array($params)) {
+                foreach ($params as $index => &$value) {	
+                    $stmt->bindParam($i, $value, PDO::PARAM_STR);
+                    $i += 1;
+                }
+            } else if ($params != "") { 
+                $stmt->bindParam($i, $params, PDO::PARAM_STR); 
+            } 
+          
+            $stmt->execute();
+            $rs = $stmt->fetchAll();
+    
+            // if($qq)$this->mostrarQuery()
+            if ($this->DEPURAR || $this->MQ) {
+                $this->mostrarQuery();
+            }
+            
+            return $rs;
+        } 
+        catch (Exception $e) 
+        { 
+            // Agrega información adicional a la excepción
+            $errorMessage = $e->getMessage() . " [Query: $query, Params: " . json_encode($params) . "]";
+            throw new Exception($errorMessage);
+        } 
+    }
+    //fin funcion ejecutaSPSafe 
 
    /*CALL SP_Name("valP1","valP2","..");*/
 }
