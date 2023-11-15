@@ -6,7 +6,12 @@ class Usuarios
     public $objMysql;
 
     public function __construct(){
-        $this->objMysql = new clsMysql();
+        try {
+            $this->objMysql = new clsMysql();
+        } catch (Exception $e) {
+            error_log("Error en el constructor de Usuarios: " . $e->getMessage());
+            throw $e;
+        }
     }
 
     public function getNombrePorMatricula($matricula, $MQ=false){
@@ -15,8 +20,16 @@ class Usuarios
     }
 
     // Insert o Update los datos de un pedido
-    public function insertPedidos($producto, $precio, $MQ=false){
-        return $this->objMysql->ejecutaSPSafe('sp_insert_pedido',array($producto, $precio),$MQ);   
+    public function insertPedidos($producto, $precio, $MQ = false)
+    {
+       return $this->objMysql->ejecutaSPSafe('sp_insert_pedido', array($producto, $precio), $MQ);
+    
+    }
+
+    
+    public function getPedidosAgregados($MQ=false){
+        //select all data       
+        return $this->objMysql->ejecutaSPSafe('sp_getPedidos_agregados_db',null,$MQ);   
     }
 }
 ?>

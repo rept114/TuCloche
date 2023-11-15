@@ -223,9 +223,8 @@ function insertarEnBaseDeDatos(index) {
     /* Obtiene los valores capturados en los div */
     var paramNombre = $("#nombreProducto" + index).html();
     var paramPrecio = $("#precioProducto" + index).html().replace('$', '');
-
-    console.log("Nombre: ", paramNombre);
-    console.log("Precio: ", paramPrecio);
+    
+    
     
     /* Validaciones de contenido */
     if (paramNombre == "" || paramPrecio == ""){
@@ -237,10 +236,10 @@ function insertarEnBaseDeDatos(index) {
         $.post("modulos/Carrito/insertProductospPedir.php", 
         {
             producto: paramNombre,
-            precio: paramPrecio,          
+            precio: paramPrecio          
         })
         .done(function(data) {   
-            if (data === "Éxito") { // Asegúrate de que la comparación sea estricta (===)
+            if (data.trim() == "Éxito") { // Asegúrate de que la comparación sea estricta (===)
                 Swal.fire('Buen trabajo!', 'Se hizo el pago con éxito!', 'success');
                 // Si deseas actualizar la vista después de guardar, llama a la función correspondiente aquí
             } else {
