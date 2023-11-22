@@ -37,8 +37,8 @@
     ?>
 </div>
 
-    <div class="col-md-3">
-        <div class="card text-bg-dark">
+    <div class="col">
+        <div class="card h-100">
             <a href="#" class="btn">
                 <img src="imgs/PLUS_CARRITO.png" class="card-img img-fluid" alt="Agregar" style="max-width: 150px; max-height: 150px;">
             </a>
@@ -68,6 +68,10 @@
                 <?php
                     }
                 ?>
+                <tr>
+                    <td class="h5">Total</td>
+                    <td class="h5">Precio</td>
+                </tr>
             </tbody>
         </table>
 <div class="d-grid gap-2 col-6 mx-auto">

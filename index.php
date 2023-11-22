@@ -18,6 +18,15 @@
   background-color: #fff;
   border: 1px solid #ccc;
 }
+
+.curved-table {
+    border-radius: 30px; /* Adjust the radius as needed */
+    overflow: hidden;
+}
+.curved-table th, .curved-table td {
+    padding: 10px;
+}
+
 </style>
 <body>
     <div class="jm-loadingpage"></div>
@@ -46,26 +55,26 @@
             <br></br>
             <h2>Explorar por categoría:</h2>
             <div class="d-flex justify-content-between">
-                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Desayunos();">
+                <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Desayunos();">
                     <h1>Desayunos</h1>
                     <img src="imgs/DESAYUNO.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
-                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Comidas();">
+                <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Comidas();">
                     <h1>Comidas</h1>
                     <img src="imgs/COMIDA.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
-                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Bebidas();">
+                <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Bebidas();">
                     <h1>Bebidas</h1>
                     <img src="imgs/Soda_2.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
             </div>
             <br></br>
             <div class="d-flex justify-content-between">
-                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Menu_Semanal();">
+                <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Menu_Semanal();">
                     <h3>Menú de la Semana</h3>
                     <img src="imgs/MENU.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
-                <button class="btn btn-light" type="button" style="width: 350px;" onclick="Snacks();">
+                <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Snacks();">
                     <h3>Snacks</h3>
                     <img src="imgs/Snacks.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
