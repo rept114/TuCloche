@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="css/Productos.css">
-<br></br>
 <div class="container text-center mt-5" id="iContainer">
     <div id="pageback">
         <a href="" onclick="Inicio();" class="btn back-btn">
@@ -9,8 +8,8 @@
         <h4 id="bienvenido">Mi carrito</h4> 
     </div>  
 </div>
+<br></br>
 <div class="container border-top border-4 row row-cols-1 row-cols-md-3 g-4" id="cContainer"></div><br>
-
 <div class="container row row-cols-12 row-cols-md-3 g-4">
     <?php
     include '../../appCode/clsUsuarios.php';   
@@ -27,7 +26,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div style="font-size: 22px;">$<?=$row["precio"]?></div>
                     <button class="btn btn-sm" style="width: 50px; height: 50px;">
-                        <img src="imgs/Agregar.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
+                        <img src="imgs/menos.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
                     </button>
                 </div>
             </div>
@@ -38,14 +37,14 @@
     ?>
 </div>
 
-    <div class="row">
-        <div class="col text-center">
-            <div class="card text-bg-dark">
-                <a href="#" class="btn">
-                    <img src="imgs/PLUS_CARRITO.png" class="card-img img-fluid" alt="Agregar" style="max-width: 300px; max-height: 300px;">
-                </a>
-            </div>
+    <div class="col-md-3">
+        <div class="card text-bg-dark">
+            <a href="#" class="btn">
+                <img src="imgs/PLUS_CARRITO.png" class="card-img img-fluid" alt="Agregar" style="max-width: 150px; max-height: 150px;">
+            </a>
         </div>
+    </div>
+
 
 
         <table class="table curved-table table-hover table-light table-borderless">
