@@ -38,13 +38,17 @@
     ?>
 </div>
 
-    <div class="col">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 mx-auto">
         <div class="card h-100">
             <a href="#" class="btn">
                 <img src="imgs/PLUS_CARRITO.png" class="card-img img-fluid" alt="Agregar" style="max-width: 150px; max-height: 150px;">
             </a>
         </div>
     </div>
+  </div>
+</div>
 
     <table class="table curved-table table-hover table-light table-borderless">
             <thead class="text-center">
@@ -74,7 +78,6 @@
                     <td class="h5 total-precio"><?= "$" . $total ?></td>
                 </tr>
             </tbody>
-
         </table>
 <div class="d-grid gap-2 col-6 mx-auto">
   <button class="btn btn-light curved-table" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="ModalTarjeta();">Agregar tarjeta de pago</button>
