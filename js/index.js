@@ -86,6 +86,27 @@ function ModalMatricula(){
     });
 }
 
+function iniciarPagina() {
+    ModalUsuario();
+}
+
+function ModalUsuario() {
+    $.post("../modulosAdmin/modal/UsuarioAdmin.php", {})
+        .done(function(data) {
+            $("#exampleModal .modal-content").html(data);
+            $("#exampleModal").modal('show');
+        });
+}
+
+
+
+// Función para cerrar el modal
+function cerrarModal() {
+    // Agrega aquí la lógica que necesitas antes de cerrar el modal
+    $("#exampleModal").modal('hide');
+}
+
+
 function Ppago(){
     $.post("modulos/Carrito/pago.php", {})
     .done(function(data)
