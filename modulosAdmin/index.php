@@ -111,6 +111,15 @@
             </div>
         </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- Contenido del modal -->
+            </div>
+        </div>
+        </div>
+
         <script src="../vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
         <script src="../js/index.js?v=1"></script>
         <!--Boostrap 5.0 js!-->
