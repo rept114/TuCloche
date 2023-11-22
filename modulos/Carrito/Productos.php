@@ -45,9 +45,7 @@
         </div>
     </div>
 
-
-
-        <table class="table curved-table table-hover table-light table-borderless">
+    <table class="table curved-table table-hover table-light table-borderless">
             <thead class="text-center">
                 <tr>
                     <th scope="col" class="h4">Pedido</th>

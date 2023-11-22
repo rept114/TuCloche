@@ -56,26 +56,26 @@
             <h2>Explorar por categoría:</h2>
             <div class="d-flex justify-content-between">
                 <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Desayunos();">
-                    <h1>Desayunos</h1>
+                    <span class="fs-3">Desayunos</span>
                     <img src="imgs/DESAYUNO.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
                 <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Comidas();">
-                    <h1>Comidas</h1>
+                    <span class="fs-3">Comidas</span>
                     <img src="imgs/COMIDA.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
                 <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Bebidas();">
-                    <h1>Bebidas</h1>
+                    <span class="fs-3">Bebidas</span>
                     <img src="imgs/Soda_2.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
             </div>
             <br></br>
             <div class="d-flex justify-content-between">
                 <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Menu_Semanal();">
-                    <h3>Menú de la Semana</h3>
+                    <span class="fs-3">Menú de la Semana</span>
                     <img src="imgs/MENU.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
                 <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Snacks();">
-                    <h3>Snacks</h3>
+                    <span class="fs-3">Snacks</span>
                     <img src="imgs/Snacks.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
             </div>
