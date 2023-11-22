@@ -86,6 +86,27 @@ function ModalMatricula(){
     });
 }
 
+function iniciarPagina() {
+    ModalUsuario();
+}
+
+function ModalUsuario() {
+    $.post("../modulosAdmin/modal/UsuarioAdmin.php", {})
+        .done(function(data) {
+            $("#exampleModal .modal-content").html(data);
+            $("#exampleModal").modal('show');
+        });
+}
+
+
+
+// Función para cerrar el modal
+function cerrarModal() {
+    // Agrega aquí la lógica que necesitas antes de cerrar el modal
+    $("#exampleModal").modal('hide');
+}
+
+
 function Ppago(){
     $.post("modulos/Carrito/pago.php", {})
     .done(function(data)
@@ -253,6 +274,44 @@ function insertarEnBaseDeDatos(index) {
     }
 }
 
+// Función para eliminar un producto del carrito
+function eliminarProducto(id) {
+    $.post("modulos/Carrito/eliminarProducto.php", { id: id })
+        .done(function(data) {
+            // Si la eliminación fue exitosa
+            if (data.trim() === "Éxito") {
+                // Elimina visualmente el elemento correspondiente al producto eliminado
+                $("#producto" + id).remove();
+                console.log("Producto eliminado con éxito");
+            } else {
+                console.error("Error al intentar eliminar el producto");
+            }
+        })
+        .fail(function() {
+            console.error("Error al intentar eliminar el producto");
+        });
+}
+
+// Agrega un manejador de eventos a los botones de eliminar
+$(document).on("click", ".eliminar-producto", function() {
+    var idProducto = $(this).data("id");
+    eliminarProducto(idProducto);
+});
+
+//suma precios
+function sumarPrecios() {
+    var suma = 0;
+    $(".precio").each(function() {
+        var precio = parseFloat($(this).text().replace("$", ""));
+        suma += precio;
+    });
+    $(".total-precio").text("$" + suma.toFixed(2)); // Mostrar la suma
+}
+
+// Llamar a la función al cargar la página
+$(document).ready(function() {
+    sumarPrecios();
+});
 
 
 

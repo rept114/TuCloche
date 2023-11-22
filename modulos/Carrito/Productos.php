@@ -15,7 +15,7 @@
     include '../../appCode/clsUsuarios.php';   
     $usuarios = new Usuarios();
     $result = $usuarios->getPedidosAgregados();
-    
+
     foreach ($result as $row) {
     ?>
     <div class="col">
@@ -25,7 +25,8 @@
                 <h5 class="card-title"><?=$row["producto"]?></h5>
                 <div class="d-flex justify-content-between align-items-center">
                     <div style="font-size: 22px;">$<?=$row["precio"]?></div>
-                    <button class="btn btn-sm" style="width: 50px; height: 50px;">
+                    <!-- Agrega el botón de eliminar con el identificador único -->
+                    <button class="btn btn-sm eliminar-producto" data-id="<?=$row["id"]?>" style="width: 50px; height: 50px;">
                         <img src="imgs/menos.png" alt="Small Button Image 1" style="max-width: 100%; max-height: 100%;">
                     </button>
                 </div>
@@ -56,21 +57,24 @@
                 <?php    
                     $usuarios = new Usuarios();
                     $result = $usuarios->getPedidosAgregados();
-                    foreach($result as $row)
-                    {
+                    $total = 0; // Variable para almacenar la suma
+                    foreach ($result as $row) {
+                        $precio = $row["precio"];
+                        $total += $precio; // Sumar al total
                 ?>
                 <tr>
                     <td class="h5"><?=$row["producto"]?></td>
-                    <td class="h5">$<?=$row["precio"]?></td>
+                    <td class="h5 precio"><?= "$" . $precio?></td>
                 </tr>
                 <?php
                     }
                 ?>
                 <tr>
                     <td class="h5">Total</td>
-                    <td class="h5">Precio</td>
+                    <td class="h5 total-precio"><?= "$" . $total ?></td>
                 </tr>
             </tbody>
+
         </table>
 <div class="d-grid gap-2 col-6 mx-auto">
   <button class="btn btn-light curved-table" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="ModalTarjeta();">Agregar tarjeta de pago</button>

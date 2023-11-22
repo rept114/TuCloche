@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="../vendor/sweetalert2/dist/sweetalert2.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body onload="iniciarPagina();">
         <div class="jm-loadingpage"></div>
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #061d4f;">
             <div class="container-fluid">
@@ -22,24 +22,24 @@
             </div>
         </nav>
         <div class="container mt-5" id="iContainer">
-    <h4 class="text-start">Pedidos a realizar:</h4>
-</div>
+            <h4 class="text-start">Pedidos a realizar:</h4>
+        </div>
 
-    <style>
-    .curved-table {
-        border-radius: 30px; /* Adjust the radius as needed */
-        overflow: hidden;
-    }
-    .curved-table th, .curved-table td {
-        padding: 10px;
-    }
+            <style>
+            .curved-table {
+                border-radius: 30px; /* Adjust the radius as needed */
+                overflow: hidden;
+            }
+            .curved-table th, .curved-table td {
+                padding: 10px;
+            }
 
-    .btn-dark-blue {
-        background-color: #0b1a5c; /* Dark Blue color code */
-        color: #fff; /* Text color */  
-        }
-    </style>
-    
+            .btn-dark-blue {
+                background-color: #0b1a5c; /* Dark Blue color code */
+                color: #fff; /* Text color */  
+                }
+            </style>
+            
         <div class="d-flex justify-content-center align-items-start" style="margin-top: 5vh;">
             <div class="card" style="width: 70rem;">
                 <div class="card-header">
@@ -109,6 +109,15 @@
                     <a href="#" class="btn btn-dark-blue curved-table">Pedido listo</a>
                 </div>
             </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- Contenido del modal -->
+            </div>
+        </div>
         </div>
 
         <script src="../vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
