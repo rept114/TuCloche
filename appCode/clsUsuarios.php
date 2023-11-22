@@ -31,6 +31,12 @@ class Usuarios
         //select all data       
         return $this->objMysql->ejecutaSPSafe('sp_getPedidos_agregados_db',null,$MQ);   
     }
+
+    //eliminar
+    public function eliminarProducto($idProducto) {
+        return $this->objMysql->ejecutaSPSafe('sp_delete_productosdb', array($idProducto));
+    }
+
 }
 ?>
 
