@@ -19,10 +19,15 @@
                     <a href="" onclick="Inicio();"><img src="../imgs/LOGO_ULSA.png" id="ulsa"></a>
                     <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
                 </div>
+                <form class="d-flex align-items-center">
+                <button class="btn carrito-btn">
+                    <a href="#"><img src="../imgs/USER.png" alt="Usuario" style="max-width: 100%; max-height: 100%;"></a>
+                </button>
+                </form>
             </div>
         </nav>
         <div class="container mt-5" id="iContainer">
-    <h4 class="text-start">Elementos:</h4>
+    <h4 class="text-start">Editar:</h4>
 </div>
 
 <style>
@@ -42,31 +47,65 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 mx-auto">
-        <table class="table curved-table table-hover table-light">
+    <div class="col-md-10 mx-auto">
+        <table class="table curved-table table-light">
             <thead class="text-center">
                 <tr>
-                <th scope="col" class="fs-5">Nombre:</th>
-                <th scope="col" class="fs-5">Cantidad:</th>
-                <th scope="col" class="fs-5">Precio:</th>
-                <th scope="col" class="fs-5">Acciones:</th>
+                <th scope="col" class="fs-5">Inserte los datos a editar:</th>
+                <th scope="col" class="fs-5"></th>
                 </tr>
             </thead>
             <tbody class="text-center">
                 <tr>
-                <td class="h5">Huevos</td>
-                <td class="h5">2</td>
-                <td class="h5">$29.00</td>
-                <td>
-                    <button type="button" class="btn">
-                        <img src="../imgs/EDIT.png" alt="Edit" width="22" height="22">
-                    </button>
-                    <button type="button" class="btn">
-                        <img src="../imgs/Erase.png" alt="Delete" width="22" height="22">
-                    </button>
+                <td class="h5">Nombre:</td>
+                <td class="h5">
+                    <input type="email" class="form-control">
                 </td>
                 </tr>
                 <tr>
+                <td class="h5">Precio:</td>
+                <td class="h5">
+                    <input type="email" class="form-control">
+                </td>
+                </tr>
+                <tr>
+                <td class="h5">Descripción:</td>
+                <td class="h5">
+                    <input type="email" class="form-control">
+                </td>
+                </tr>
+                <tr>
+                <td class="h5">Categoría:</td>
+                <td class="h5">
+                    <input type="email" class="form-control">
+                </td>
+                </tr>
+                <tr>
+                <td class="h5">Cantidad:</td>
+                <td class="h5">
+                    <input type="email" class="form-control">
+                </td>
+                </tr>
+                <tr>
+                <td class="h5">Precio:</td>
+                <td class="h5">
+                    <input type="email" class="form-control">
+                </td>
+                </tr>
+                <tr>
+                <td class="h5">Imágen:</td>
+                    <td class="h5" colspan="2">
+                        <div class="mb-3">
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                <td class="h5"></td>
+                <td class="h5" colspan="2">
+                    <button class="btn btn-dark-blue curved-table w-50" type="button">Editar</button>
+                </td>
+                </tr>
         </table>
      </div>
   </div>

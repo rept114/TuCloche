@@ -63,7 +63,7 @@
                     <span class="fs-3">Comidas</span>
                     <img src="imgs/COMIDA.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
-                <button class="btn btn-light curved-table" type="button" style="width: 350px;" onclick="Bebidas();">
+                <button class="btn btn-light curved-table w-30" type="button" style="width: 350px;" onclick="Bebidas();">
                     <span class="fs-3">Bebidas</span>
                     <img src="imgs/Soda_2.png" class="ml-2" style="max-width: 50px; max-height: 50px;">
                 </button>
