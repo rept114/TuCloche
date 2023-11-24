@@ -19,8 +19,14 @@
                     <a href="" onclick="Inicio();"><img src="../imgs/LOGO_ULSA.png" id="ulsa"></a>
                     <a class="navbar-brand mx-auto text-center" href="index.php">TuCloché</a>
                 </div>
+                <form class="d-flex align-items-center">
+                <button class="btn carrito-btn">
+                    <a href="#"><img src="../imgs/USER.png" alt="Usuario" style="max-width: 100%; max-height: 100%;"></a>
+                </button>
+                </form>
             </div>
         </nav>
+        
         <div class="container mt-5" id="iContainer">
             <h4 class="text-start">Pedidos a realizar:</h4>
         </div>
@@ -58,7 +64,7 @@
                     </ul>
                 </div>
                 <div class="card-footer text-end">
-                    <a href="#" class="btn btn-dark-blue curved-table">Pedido listo</a>
+                    <a href="#" class="btn btn-dark-blue curved-table w-30">Pedido listo</a>
                 </div>
             </div>
         </div>
@@ -82,7 +88,7 @@
                     </ul>
                 </div>
                 <div class="card-footer text-end">
-                    <a href="#" class="btn btn-dark-blue curved-table">Pedido listo</a>
+                    <a href="#" class="btn btn-dark-blue curved-table w-30">Pedido listo</a>
                 </div>
             </div>
         </div>
@@ -106,14 +112,14 @@
                     </ul>
                 </div>
                 <div class="card-footer text-end">
-                    <a href="#" class="btn btn-dark-blue curved-table">Pedido listo</a>
+                    <a href="#" class="btn btn-dark-blue curved-table w-30">Pedido listo</a>
                 </div>
             </div>
         </div>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog curved-table" id="addModal">
             <div class="modal-content">
             <!-- Contenido del modal -->
             </div>
