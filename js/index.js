@@ -106,6 +106,16 @@ function cerrarModal() {
     $("#exampleModal").modal('hide');
 }
 
+//Movimientos en los elementos
+function EditarElementos(){
+    $.post("../modulosAdmin/editarElementos.php", {})
+    .done(function(data)
+    {
+        $("#dvContainer").html("");
+        $("#dvContainer").html(data);
+    });
+}
+
 
 function Ppago(){
     $.post("modulos/Carrito/pago.php", {})
@@ -312,7 +322,5 @@ function sumarPrecios() {
 $(document).ready(function() {
     sumarPrecios();
 });
-
-
 
 

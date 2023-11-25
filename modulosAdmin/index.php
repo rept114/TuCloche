@@ -25,7 +25,6 @@
                 </button>
                 </form>
             </div>
-            <button>Hola</button>
         </nav>
         
         <div class="container mt-5" id="iContainer">
